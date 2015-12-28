@@ -1,0 +1,498 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* school_training
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-06-20 20:54+0000\n"
+"PO-Revision-Date: 2012-06-20 20:54+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:190
+#: view:school.training:0
+#: field:school.training,category_id:0
+#, python-format
+msgid "Category"
+msgstr "Categoría"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:89
+#: model:ir.model,name:school_training.model_school_training_city
+#: model:ir.ui.menu,name:school_training.menu_school_city
+#: view:school.training.city:0
+#: view:school.training.educational.institution:0
+#: field:school.training.educational.institution,city_id:0
+#, python-format
+msgid "City"
+msgstr "Ciudad"
+
+#. module: school_training
+#: selection:school.training.news.report,state:0
+msgid "Revised"
+msgstr "Revisado"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:297
+#: field:school.training.news.report,start_date:0
+#, python-format
+msgid "From"
+msgstr "Desde"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:199
+#: field:school.training,grade_id:0
+#, python-format
+msgid "Grade"
+msgstr "Grado"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:72
+#: code:addons/school_training/school_training.py:94
+#: sql_constraint:school.training.city:0
+#: sql_constraint:school.training.educational.institution:0
+#, python-format
+msgid "Name must be unique"
+msgstr "El nombre debe ser único"
+
+#. module: school_training
+#: view:school.training:0
+msgid "Note"
+msgstr "Observaciones"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:93
+#: sql_constraint:school.training.educational.institution:0
+#, python-format
+msgid "Code must be unique"
+msgstr "El código debe ser único"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:211
+#: code:addons/school_training/school_training.py:306
+#: view:school.training:0
+#: field:school.training,state:0
+#: view:school.training.city:0
+#: field:school.training.news.report,state:0
+#, python-format
+msgid "State"
+msgstr "Estado"
+
+#. module: school_training
+#: selection:school.training.news.report,state:0
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: school_training
+#: view:school.training:0
+#: view:school.training.city:0
+#: view:school.training.educational.institution:0
+#: view:school.training.news.report:0
+msgid "Filter by..."
+msgstr "Filtrar por..."
+
+#. module: school_training
+#: model:res.groups,name:school_training.administrator
+msgid "Training Manager"
+msgstr "Administrador de Capacitación País/Exterior"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:201
+#: field:school.training,specialty_id:0
+#, python-format
+msgid "Specialty"
+msgstr "Especialidad"
+
+#. module: school_training
+#: model:ir.actions.act_window,name:school_training.act_school_training_news_report
+msgid "Training News Report View"
+msgstr "Reporte de Actividades de Capacitación"
+
+#. module: school_training
+#: view:school.training.city:0
+msgid "Ecuador"
+msgstr "Ecuador"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:18
+#: selection:school.training,modality:0
+#, python-format
+msgid "Open and Distance"
+msgstr "A Distancia / Abierto"
+
+#. module: school_training
+#: model:ir.model,name:school_training.model_school_training_financial_concept
+msgid "Financial Concept"
+msgstr "Concepto Financiero"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:188
+#: view:school.training:0
+#: field:school.training,sector_id:0
+#, python-format
+msgid "Sector"
+msgstr "Sector"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:142
+#: field:school.training.financial.detail,concept_id:0
+#, python-format
+msgid "Concept"
+msgstr "Concepto"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:212
+#: view:school.training:0
+#: field:school.training,student_ids:0
+#, python-format
+msgid "Students"
+msgstr "Alumnos"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:194
+#: model:ir.actions.act_window,name:school_training.act_school_educational_institution
+#: model:ir.model,name:school_training.model_school_training_educational_institution
+#: model:ir.ui.menu,name:school_training.menu_school_educational_institution
+#: field:school.training,edu_inst_id:0
+#: view:school.training.educational.institution:0
+#, python-format
+msgid "Educational Institution"
+msgstr "Institución Educativa"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:203
+#: field:school.training,quota:0
+#, python-format
+msgid "Quota"
+msgstr "Cupo"
+
+#. module: school_training
+#: selection:school.training.news.report,state:0
+msgid "Released"
+msgstr "Publicado"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:11
+#: view:school.training:0
+#: selection:school.training,state:0
+#, python-format
+msgid "Running"
+msgstr "En Ejecución"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:299
+#: field:school.training.news.report,student_id:0
+#, python-format
+msgid "Student"
+msgstr "Alumno"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:66
+#: field:school.training.city,state_id:0
+#, python-format
+msgid "Province"
+msgstr "Provincia"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:9
+#: view:school.training:0
+#: selection:school.training,state:0
+#, python-format
+msgid "By Running"
+msgstr "Por Ejecutar"
+
+#. module: school_training
+#: view:school.training.city:0
+msgid "Cities"
+msgstr "Ciudades"
+
+#. module: school_training
+#: view:school.training.financial.detail:0
+msgid "Financial Detail"
+msgstr "Detalle Financiero"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:307
+#: field:school.training.news.report,is_approver:0
+#, python-format
+msgid "Is Approver"
+msgstr "Puede Aprobar?"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:207
+#: field:school.training,end_date:0
+#, python-format
+msgid "End Date"
+msgstr "Fecha Final"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:144
+#: code:addons/school_training/school_training.py:300
+#: model:ir.model,name:school_training.model_school_training
+#: model:ir.ui.menu,name:school_training.menu_school_training
+#: view:school.training:0
+#: field:school.training.financial.detail,training_id:0
+#: field:school.training.news.report,training_id:0
+#, python-format
+msgid "Training"
+msgstr "Capacitación País/Exterior"
+
+#. module: school_training
+#: model:res.groups,name:school_training.student
+msgid "Training Student"
+msgstr "Alumno de Capacitación País/Exterior"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:31
+#: code:addons/school_training/school_training.py:48
+#: code:addons/school_training/school_training.py:65
+#: code:addons/school_training/school_training.py:88
+#: code:addons/school_training/school_training.py:109
+#: code:addons/school_training/school_training.py:186
+#: field:school.training,name:0
+#: field:school.training.category,name:0
+#: field:school.training.city,name:0
+#: field:school.training.educational.institution,name:0
+#: field:school.training.financial.concept,name:0
+#: field:school.training.sector,name:0
+#, python-format
+msgid "Name"
+msgstr "Nombre"
+
+#. module: school_training
+#: view:school.training.news.report:0
+msgid "If you publish can no longer edit the news. Do you want continue?"
+msgstr "Si publica ya no podrá editar la novedad. ¿Desea continuar?"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:197
+#: field:school.training,year:0
+#, python-format
+msgid "Year"
+msgstr "Año"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:68
+#: code:addons/school_training/school_training.py:192
+#: view:school.training:0
+#: field:school.training,country_id:0
+#: view:school.training.city:0
+#: field:school.training.city,country:0
+#, python-format
+msgid "Country"
+msgstr "País"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:294
+#: field:school.training,note:0
+#: field:school.training.news.report,name:0
+#, python-format
+msgid "Notes"
+msgstr "Observaciones"
+
+#. module: school_training
+#: model:ir.model,name:school_training.model_school_training_financial_detail
+msgid "Training Financial Detail"
+msgstr "Detalle Financiero"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:214
+#: field:school.training,student_count:0
+#, python-format
+msgid "No of Students"
+msgstr "# de Alumnos"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:143
+#: field:school.training.financial.detail,amount:0
+#, python-format
+msgid "Amount"
+msgstr "Valor"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:87
+#: field:school.training.educational.institution,code:0
+#, python-format
+msgid "Code"
+msgstr "Código"
+
+#. module: school_training
+#: model:ir.model,name:school_training.model_school_training_category
+msgid "Training Category"
+msgstr "Categoría"
+
+#. module: school_training
+#: view:school.training.news.report:0
+msgid "Release"
+msgstr "Publicar"
+
+#. module: school_training
+#: model:ir.actions.act_window,name:school_training.act_school_city
+msgid "City View"
+msgstr "Ciudad"
+
+#. module: school_training
+#: model:ir.actions.act_window,name:school_training.act_school_training
+msgid "Training View"
+msgstr "Capacitación País/Exterior"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:205
+#: code:addons/school_training/school_training.py:207
+#: help:school.training,end_date:0
+#: help:school.training,start_date:0
+#, python-format
+msgid "(mm/dd/yyyy)"
+msgstr "(Mes/Día/Año)"
+
+#. module: school_training
+#: view:school.training.news.report:0
+msgid "Revise"
+msgstr "Revisar"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:296
+#: field:school.training.news.report,created_date:0
+#, python-format
+msgid "Novelty Date"
+msgstr "Fecha de Creación"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:12
+#: view:school.training:0
+#: selection:school.training,state:0
+#, python-format
+msgid "Executed"
+msgstr "Ejecutado"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:215
+#: view:school.training:0
+#: field:school.training,financial_detail_ids:0
+#, python-format
+msgid "Financial Details"
+msgstr "Detalles Financieros"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:148
+#: sql_constraint:school.training.financial.detail:0
+#, python-format
+msgid "Concept must be unique"
+msgstr "El concepto debe ser único"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:17
+#: selection:school.training,modality:0
+#, python-format
+msgid "Blended Learning"
+msgstr "Semipresencial"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:114
+#: field:school.training.financial.concept,property_account_expense:0
+#, python-format
+msgid "Account Expense"
+msgstr "Cuenta Contable"
+
+#. module: school_training
+#: view:school.training:0
+#: view:school.training.city:0
+#: view:school.training.educational.institution:0
+msgid "Group by..."
+msgstr "Agrupar por..."
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:117
+#: help:school.training.financial.concept,property_account_expense:0
+#, python-format
+msgid "This account will be used instead of the default one as the expense account for the current concept"
+msgstr "Esta cuenta se utilizará como la cuenta de gastos para el concepto actual"
+
+#. module: school_training
+#: view:school.training:0
+#: code:addons/school_training/school_training.py:196
+#: field:school.training,modality:0
+#, python-format
+msgid "Modality of Study"
+msgstr "Modalidad de Estudio"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:8
+#: view:school.training:0
+#: selection:school.training,state:0
+#, python-format
+msgid "Suspend"
+msgstr "Suspendido"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:10
+#: view:school.training:0
+#: selection:school.training,state:0
+#, python-format
+msgid "Canceled"
+msgstr "Cancelado"
+
+#. module: school_training
+#: model:ir.model,name:school_training.model_school_training_news_report
+msgid "News Report"
+msgstr "Reporte de Novedades"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:7
+#: view:school.training:0
+#: selection:school.training,state:0
+#, python-format
+msgid "Not Executed"
+msgstr "Planificado"
+
+#. module: school_training
+#: view:school.training:0
+msgid "You can not undo this action. Do you want to continue?"
+msgstr "No podrá deshacer esta acción. ¿Desea continuar?"
+
+#. module: school_training
+#: model:ir.model,name:school_training.model_school_training_sector
+msgid "Training Sector"
+msgstr "Sector"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:209
+#: field:school.training,duration:0
+#, python-format
+msgid "Duration"
+msgstr "Duración"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:298
+#: field:school.training.news.report,end_date:0
+#, python-format
+msgid "To"
+msgstr "Hasta"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:205
+#: field:school.training,start_date:0
+#, python-format
+msgid "Start Date"
+msgstr "Fecha Inicial"
+
+#. module: school_training
+#: code:addons/school_training/school_training.py:16
+#: selection:school.training,modality:0
+#, python-format
+msgid "Modality"
+msgstr "Presencial"
+
+#. module: school_training
+#: model:ir.ui.menu,name:school_training.menu_school_training_news_report
+#: view:school.training.news.report:0
+msgid "Training News Report"
+msgstr "Reporte de Novedades"
+

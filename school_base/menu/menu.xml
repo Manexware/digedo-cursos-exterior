@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+
+		<menuitem id="menu_school" 
+			name="School" />
+
+		<menuitem id="menu_school_base" 
+			parent="menu_school" 
+			name="School" 
+			sequence="1" />
+
+		<menuitem id="menu_school_config" 
+			parent="menu_school" 
+			name="Configuration" 
+			sequence="2" />
+
+		<menuitem id="menu_school_config_student" 
+			parent="menu_school_config" 
+			name="Students" 
+			sequence="1" />
+
+		<menuitem id="menu_school_config_course" 
+			parent="menu_school_config" 
+			name="Courses" 
+			sequence="2" />
+
+		<menuitem id="menu_school_config_matter" 
+			parent="menu_school_config" 
+			name="Matters" 
+			sequence="3" />
+
+		<menuitem id="menu_school_grade"
+			parent="menu_school_config_student"
+			name="Grade"
+			action="act_school_grade" sequence="4" />
+
+
+		<menuitem id="menu_school_specialty"
+			parent="menu_school_config_student"
+			name="Specialty"
+			action="act_school_specialty" sequence="2" />
+
+		<menuitem id="menu_act_school_employee"
+			action="act_school_employee"
+			parent="hr.menu_hr_main" sequence="4" />
+
+	</data>
+</openerp>

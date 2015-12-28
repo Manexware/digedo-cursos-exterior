@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+
+		<!--
+			TRAINING
+		-->
+		<record id="view_school_training_form" model="ir.ui.view">
+			<field name="name">school.training.form</field>
+			<field name="model">school.training</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Training">
+					<header>
+						<button name="suspend" string="Suspend" states="not executed" type="object" confirm="You can not undo this action. Do you want to continue?" />
+						<button name="by_running" string="By Running" states="not executed" type="object" confirm="You can not undo this action. Do you want to continue?" />
+						<button name="canceled" string="Canceled" states="by running" type="object" confirm="You can not undo this action. Do you want to continue?" />
+						<button name="running" string="Running" states="by running" type="object" confirm="You can not undo this action. Do you want to continue?" />
+						<button name="executed" string="Executed" states="running" type="object" confirm="You can not undo this action. Do you want to continue?" />
+						<field name="state" widget="statusbar" statusbar_visible="not executed,by running,running,executed" />
+					</header>
+					<sheet>
+						<group>
+							<field name="name" colspan="4" />
+							<newline />
+							<field name="sector_id" />
+							<field name="category_id" />
+							<field name="modality" />
+							<newline />
+							<field name="country_id" />
+							<field name="edu_inst_id" />
+							<field name="year" />
+							<field name="quota" />
+							<field name="grade_id" />
+							<field name="specialty_id" />
+							<field name="start_date" />
+							<field name="end_date" />
+							<newline />
+						</group>
+						<notebook colspan="4">
+							<page string="Students">
+								<field name="student_ids" nolabel="1" />
+							</page>
+							<page string="Financial Details">
+								<field name="financial_detail_ids" nolabel="1" />
+							</page>
+							<page string="Note">
+								<field name="note" nolabel="1" />
+							</page>
+						</notebook>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<record id="view_school_training_tree" model="ir.ui.view">
+			<field name="name">school.training.tree</field>
+			<field name="model">school.training</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Training">
+					<field name="name" />
+					<field name="sector_id" />
+					<field name="category_id" />
+					<field name="modality" />
+					<field name="country_id" />
+					<field name="year" />
+					<field name="grade_id" invisible="1" />
+					<field name="specialty_id" invisible="1" />
+					<field name="duration" />
+					<field name="student_count" />
+					<field name="state" />
+				</tree>
+			</field>
+		</record>
+
+		<record id="view_school_training_search" model="ir.ui.view">
+			<field name="name">school.training.search</field>
+			<field name="model">school.training</field>
+			<field name="type">search</field>
+			<field name="arch" type="xml">
+				<search>
+					<group string="Filter by...">
+						<filter name="not executed" string="Not Executed" domain="[('state', '=', 'not executed')]" />
+						<filter name="suspend" string="Suspend" domain="[('state', '=', 'suspend')]" />
+						<filter name="by running" string="By Running" domain="[('state', '=', 'by running')]" />
+						<filter name="canceled" string="Canceled" domain="[('state', '=', 'canceled')]" />
+						<filter name="running" string="Running" domain="[('state', '=', 'running')]" />
+						<filter name="executed" string="Executed" domain="[('state', '=', 'executed')]" />
+						<field name="year" />
+						<field name="country_id" widget="selection" />
+						<newline />
+						<field name="name" />
+						<field name="sector_id" widget="selection" />
+						<field name="category_id" widget="selection" />
+						<field name="modality" />
+						<!--field name="grade_id" widget="selection" />
+						<field name="specialty_id" widget="selection" /-->
+						<field name="edu_inst_id" widget="selection" />
+					</group>
+					<newline />
+					<group expand="0" string="Group by...">
+						<filter string="Sector" domain="[]" context="{'group_by': 'sector_id'}" />
+						<filter string="Category" domain="[]" context="{'group_by': 'category_id'}" />
+						<filter string="Modality of Study" domain="[]" context="{'group_by': 'modality'}" />
+						<filter string="Country" domain="[]" context="{'group_by': 'country_id'}" />
+						<filter string="State" domain="[]" context="{'group_by': 'state'}" />
+					</group>
+				</search>
+			</field>
+		</record>
+
+		<record id="act_school_training" model="ir.actions.act_window">
+			<field name="name">Training View</field>
+			<field name="res_model">school.training</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="search_view_id" ref="view_school_training_search" />
+		</record>
+
+	</data>
+</openerp>

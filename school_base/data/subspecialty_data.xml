@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1"><!-- noupdate="1"-->
+
+		<record model="school.subspecialty" id="subspecialty_ct">
+			<field name="code">CT</field>
+			<field name="name">Cartograf&#237;a</field>
+		</record>
+
+		<record model="school.subspecialty" id="subspecialty_an">
+			<field name="code">AN</field>
+			<field name="name">Ayudas a la navegaci&#243;n</field>
+		</record>
+
+		<record model="school.subspecialty" id="subspecialty_cm">
+			<field name="code">CM</field>
+			<field name="name">Ciencias de mar</field>
+		</record>
+
+		<record model="school.subspecialty" id="subspecialty_eh">
+			<field name="code">EH</field>
+			<field name="name">Equipos hidrogr&#225;ficos, oceanogr&#225;ficos y de ayudas a la navegaci&#243;n</field>
+		</record>
+
+		<record model="school.subspecialty" id="subspecialty_rh">
+			<field name="code">RH</field>
+			<field name="name">Recursos humanos</field>
+		</record>
+
+		<record model="school.subspecialty" id="subspecialty_gd">
+			<field name="code">GD</field>
+			<field name="name">Gesti&#243;n documental</field>
+		</record>
+
+		<record model="school.subspecialty" id="subspecialty_mt">
+			<field name="code">MT</field>
+			<field name="name">Materiales</field>
+		</record>
+
+		<record model="school.subspecialty" id="subspecialty_fn">
+			<field name="code">FN</field>
+			<field name="name">Finanzas</field>
+		</record>
+
+		<record model="school.subspecialty" id="subspecialty_um">
+			<field name="code">UM</field>
+			<field name="name">Urgencias medicas</field>
+		</record>
+
+		<record model="school.subspecialty" id="subspecialty_rd">
+			<field name="code">RD</field>
+			<field name="name">Radiolog&#237;a</field>
+		</record>
+
+		<record model="school.subspecialty" id="subspecialty_lb">
+			<field name="code">LB</field>
+			<field name="name">Laboratorio</field>
+		</record>
+
+		<record model="school.subspecialty" id="subspecialty_fs">
+			<field name="code">FS</field>
+			<field name="name">Fisiatr&#237;a</field>
+		</record>
+
+		<record model="school.subspecialty" id="subspecialty_iq">
+			<field name="code">IQ</field>
+			<field name="name">Instrumentista quir&#250;rgico</field>
+		</record>
+
+		<record model="school.subspecialty" id="subspecialty_es">
+			<field name="code">ES</field>
+			<field name="name">Educador para la salud</field>
+		</record>
+
+		<record model="school.subspecialty" id="subspecialty_ao">
+			<field name="code">AO</field>
+			<field name="name">Odontolog&#237;a</field>
+		</record>
+
+		<record model="school.subspecialty" id="subspecialty_le">
+			<field name="code">LE</field>
+			<field name="name">Licenciado en enfermeria</field>
+		</record>
+
+		<record model="school.subspecialty" id="subspecialty_if">
+			<field name="code">IF</field>
+			<field name="name">Inform&#225;tico</field>
+		</record>
+
+		<record model="school.subspecialty" id="subspecialty_op">
+			<field name="code">OP</field>
+			<field name="name">Operaciones</field>
+			<field name="expertise">*TELECOMUNICACIONES - *RADARES - *GUERRA ELECTRONICA - *SONARES - *COMANDO Y CONTROL</field>
+		</record>
+
+		<record model="school.subspecialty" id="subspecialty_sa">
+			<field name="code">SA</field>
+			<field name="name">Sistemas de armas</field>
+			<field name="expertise">*OPERACIÓN DE EQUIPOS DE COMBATE</field>
+		</record>
+
+		<record model="school.subspecialty" id="subspecialty_mb">
+			<field name="code">MB</field>
+			<field name="name">Maniobras</field>
+			<field name="expertise">*MANIOBRAS-CUBIERTA</field>
+		</record>
+
+		<record model="school.subspecialty" id="subspecialty_ar">
+			<field name="code">AR</field>
+			<field name="name">Artilleria</field>
+			<field name="expertise">*ARTILLERIA-MONTAJE Y MUNICION</field>
+		</record>
+
+		<record model="school.subspecialty" id="subspecialty_nv">
+			<field name="code">NV</field>
+			<field name="name">Navegaci&#243;n</field>
+			<field name="expertise">*OPERADORES DE EQUIPOS DE NAVEGACION-SEÑALERO</field>
+		</record>
+
+		<record model="school.subspecialty" id="subspecialty_mt">
+			<field name="code">MT</field>
+			<field name="name">Motorista</field>
+			<field name="expertise">*MOTORES-FOGONERO</field>
+		</record>
+
+		<record model="school.subspecialty" id="subspecialty_ca">
+			<field name="code">CA</field>
+			<field name="name">Control de averias</field>
+			<field name="expertise">*CONTROL DE AVERIAS-SOLDADOR - TORNERO - REPARACIONES - HIDRAULICO</field>
+		</record>
+
+		<record model="school.subspecialty" id="subspecialty_rf">
+			<field name="code">RF</field>
+			<field name="name">Refrigeraci&#243;n</field>
+			<field name="expertise">*REFRIGERACIÓN</field>
+		</record>
+
+		<record model="school.subspecialty" id="subspecialty_ea">
+			<field name="code">EA</field>
+			<field name="name">Electricidad aplicada</field>
+			<field name="expertise">*ELECTRICIDAD APLICADA-BOMBAS - GENERADORES - REBOBINADOR</field>
+		</record>
+
+		<record model="school.subspecialty" id="subspecialty_oe">
+			<field name="code">OE</field>
+			<field name="name">Operaciones especiales</field>
+			<field name="expertise">*COMANDO - *PARACAIDISTA - *OPERACIONES RIBEREÑAS - *HOMBRES RANA</field>
+		</record>
+
+		<record model="school.subspecialty" id="subspecialty_oa">
+			<field name="code">OA</field>
+			<field name="name">Operaciones apoyo combate</field>
+			<field name="expertise">*ANTIAEREOS - *MORTERISTAS - *RADIOPERADORES - *ENFERMEROS COMBATE - *SEGURIDAD</field>
+		</record>
+
+		<record model="school.subspecialty" id="subspecialty_os">
+			<field name="code">OS</field>
+			<field name="name">Operaciones apoyo servicio combate</field>
+			<field name="expertise">CHOFERES - AUTOMOTRIZ - ELECTRONICO - ELECTRICIDAD</field>
+		</record>
+
+		<record model="school.subspecialty" id="subspecialty_tc">
+			<field name="code">TC</field>
+			<field name="name">Telecomunicaciones</field>
+			<field name="expertise">TELECOMUNICANTES</field>
+		</record>
+
+		<record model="school.subspecialty" id="subspecialty_al">
+			<field name="code">AL</field>
+			<field name="name">Ala rotatoria</field>
+		</record>
+
+		<record model="school.subspecialty" id="subspecialty_es">
+			<field name="code">ES</field>
+			<field name="name">Estructuras</field>
+		</record>
+
+		<record model="school.subspecialty" id="subspecialty_it">
+			<field name="code">IT</field>
+			<field name="name">Instrumentista</field>
+		</record>
+
+		<record model="school.subspecialty" id="subspecialty_sm">
+			<field name="code">SM</field>
+			<field name="name">Seguridad maritima</field>
+		</record>
+		
+		<record model="school.subspecialty" id="subspecialty_cg">
+			<field name="code">CG</field>
+			<field name="name">Contingencias</field>
+		</record>
+
+    </data>
+</openerp>

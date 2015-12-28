@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1"><!---->
+
+		<record model="res.country.state" id="guayas">
+			<field name="name">Guayas</field>
+			<field name="code">Gy</field>
+			<field name="country_id" search="[('name', '=', 'Ecuador')]" />
+		</record>
+		<record model="res.country.state" id="pichincha">
+			<field name="name">Pichincha</field>
+			<field name="code">Pch</field>
+			<field name="country_id" search="[('name', '=', 'Ecuador')]" />
+		</record>
+    	<record model="school.training.city" id="guayaquil">
+			<field name="name">Guayaquil</field>
+			<field name="state_id" search="[('name', '=', 'Guayas')]" />
+		</record>
+		<record model="school.training.city" id="alfredo">
+			<field name="name">Alfredo Baquerizo</field>
+			<field name="state_id" search="[('name', '=', 'Guayas')]" />
+		</record>
+		<record model="school.training.city" id="balao">
+			<field name="name">Balao</field>
+			<field name="state_id" search="[('name', '=', 'Guayas')]" />
+		</record>
+		<record model="school.training.city" id="balzar">
+			<field name="name">Balzar</field>
+			<field name="state_id" search="[('name', '=', 'Guayas')]" />
+		</record>
+		<record model="school.training.city" id="colimes">
+			<field name="name">Colimes</field>
+			<field name="state_id" search="[('name', '=', 'Guayas')]" />
+		</record>
+		<record model="school.training.city" id="daule">
+			<field name="name">Daule</field>
+			<field name="state_id" search="[('name', '=', 'Guayas')]" />
+		</record>
+		<record model="school.training.city" id="duran">
+			<field name="name">Dur&#225;n</field>
+			<field name="state_id" search="[('name', '=', 'Guayas')]" />
+		</record>
+		<record model="school.training.city" id="empalme">
+			<field name="name">El Empalme</field>
+			<field name="state_id" search="[('name', '=', 'Guayas')]" />
+		</record>
+		<record model="school.training.city" id="triunfo">
+			<field name="name">El Triunfo</field>
+			<field name="state_id" search="[('name', '=', 'Guayas')]" />
+		</record>
+		<record model="school.training.city" id="milagro">
+			<field name="name">Milagro</field>
+			<field name="state_id" search="[('name', '=', 'Guayas')]" />
+		</record>
+		<record model="school.training.city" id="naranjal">
+			<field name="name">Naranjal</field>
+			<field name="state_id" search="[('name', '=', 'Guayas')]" />
+		</record>
+		<record model="school.training.city" id="naranjito">
+			<field name="name">Naranjito</field>
+			<field name="state_id" search="[('name', '=', 'Guayas')]" />
+		</record>
+		<record model="school.training.city" id="palestina">
+			<field name="name">Palestina</field>
+			<field name="state_id" search="[('name', '=', 'Guayas')]" />
+		</record>
+		<record model="school.training.city" id="pedrocarbo">
+			<field name="name">Pedro Carbo</field>
+			<field name="state_id" search="[('name', '=', 'Guayas')]" />
+		</record>
+		<record model="school.training.city" id="samborondon">
+			<field name="name">Samborond&#243;n</field>
+			<field name="state_id" search="[('name', '=', 'Guayas')]" />
+		</record>
+		<record model="school.training.city" id="stalucia">
+			<field name="name">Santa Lucia</field>
+			<field name="state_id" search="[('name', '=', 'Guayas')]" />
+		</record>
+		<record model="school.training.city" id="salitre">
+			<field name="name">Salitre</field>
+			<field name="state_id" search="[('name', '=', 'Guayas')]" />
+		</record>
+		<record model="school.training.city" id="yaguachi">
+			<field name="name">San Jacinto de Yaguachi</field>
+			<field name="state_id" search="[('name', '=', 'Guayas')]" />
+		</record>
+		<record model="school.training.city" id="playas">
+			<field name="name">Playas</field>
+			<field name="state_id" search="[('name', '=', 'Guayas')]" />
+		</record>
+		<record model="school.training.city" id="simonbolivar">
+			<field name="name">Sim&#243;n Bol&#237;var</field>
+			<field name="state_id" search="[('name', '=', 'Guayas')]" />
+		</record>
+		<record model="school.training.city" id="marcelino">
+			<field name="name">Coronel Marcelino Maridue&#241;a</field>
+			<field name="state_id" search="[('name', '=', 'Guayas')]" />
+		</record>
+		<record model="school.training.city" id="sargentillo">
+			<field name="name">Lomas de Sargentillo</field>
+			<field name="state_id" search="[('name', '=', 'Guayas')]" />
+		</record>
+		<record model="school.training.city" id="nobol">
+			<field name="name">Nobol</field>
+			<field name="state_id" search="[('name', '=', 'Guayas')]" />
+		</record>
+		<record model="school.training.city" id="bucay">
+			<field name="name">General Elizalde (Bucay)</field>
+			<field name="state_id" search="[('name', '=', 'Guayas')]" />
+		</record>
+		<record model="school.training.city" id="isidro">
+			<field name="name">Isidro Ayora</field>
+			<field name="state_id" search="[('name', '=', 'Guayas')]" />
+		</record>
+		<record model="school.training.city" id="quito">
+			<field name="name">Quito</field>
+			<field name="state_id" search="[('name', '=', 'Pichincha')]" />
+		</record>
+		<record model="school.training.city" id="cayambe">
+			<field name="name">Cayambe</field>
+			<field name="state_id" search="[('name', '=', 'Pichincha')]" />
+		</record>
+		<record model="school.training.city" id="mejia">
+			<field name="name">Mej&#237;a</field>
+			<field name="state_id" search="[('name', '=', 'Pichincha')]" />
+		</record>
+		<record model="school.training.city" id="pedromoncayo">
+			<field name="name">Pedro Moncayo</field>
+			<field name="state_id" search="[('name', '=', 'Pichincha')]" />
+		</record>
+		<record model="school.training.city" id="ruminahui">
+			<field name="name">Rumi&#241;ahui</field>
+			<field name="state_id" search="[('name', '=', 'Pichincha')]" />
+		</record>
+		<record model="school.training.city" id="sanmiguel">
+			<field name="name">San Miguel de Los Bancos</field>
+			<field name="state_id" search="[('name', '=', 'Pichincha')]" />
+		</record>
+		<record model="school.training.city" id="pedrovicente">
+			<field name="name">Pedro Vicente Maldonado</field>
+			<field name="state_id" search="[('name', '=', 'Pichincha')]" />
+		</record>
+		<record model="school.training.city" id="ptoquito">
+			<field name="name">Puerto Quito</field>
+			<field name="state_id" search="[('name', '=', 'Pichincha')]" />
+		</record>
+		
+    </data>
+</openerp>

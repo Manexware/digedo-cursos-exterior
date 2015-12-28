@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1"><!-- noupdate="1"-->
+
+    	<!--
+    		Department
+    	-->
+		<record id="dep_teachers" model="hr.department">
+			<field name="name">Profesorado</field>
+		</record>
+
+		<!--
+			Job
+		-->
+		<record id="job_teacher" model="hr.job">
+			<field name="name">Profesor</field>
+			<field name="department_id" ref="dep_teachers"/>
+		</record>
+
+		<!--
+			Employee
+		-->
+		<record id="base.user_jdiaz" model="res.users">
+			<field name="name">Jos&#233; D&#237;az</field>
+			<field name="login">jdiaz</field>
+			<field name="password">jdiaz</field>
+		</record>
+		<record id="employee_jdiaz" model="hr.employee">
+			<field name="name">Jos&#233;</field>
+			<field name="last_name">D&#237;az</field>
+			<field name="user_id" ref="base.user_jdiaz"/>
+			<field name="department_id" ref="dep_teachers"/>
+			<field name="job_id" ref="job_teacher"/>
+			<field name="status">active</field>
+			<field name="grade_id" ref="school_base.school_grade_cpnv" />
+			<field name="specialty_id" ref="school_base.specialty_em" />
+		</record>
+
+		<record id="base.user_cpazmino" model="res.users">
+			<field name="name">Carlos Pazmi&#241;o</field>
+			<field name="login">cpazmino</field>
+			<field name="password">cpazmino</field>
+		</record>
+		<record id="employee_cpazmino" model="hr.employee">
+			<field name="name">Carlos</field>
+			<field name="last_name">Pazmi&#241;o</field>
+			<field name="user_id" ref="base.user_cpazmino"/>
+			<field name="department_id" ref="dep_teachers"/>
+			<field name="job_id" ref="job_teacher"/>
+			<field name="status">passive</field>
+			<field name="suffix">Msc.</field>
+			<field name="grade_id" ref="school_base.school_grade_cpcb" />
+		</record>
+
+		<record id="base.user_pron" model="res.users">
+			<field name="name">Pablo Ron</field>
+			<field name="login">pron</field>
+			<field name="password">pron</field>
+		</record>
+		<record id="employee_pron" model="hr.employee">
+			<field name="name">Pablo</field>
+			<field name="last_name">Ron</field>
+			<field name="user_id" ref="base.user_pron" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">active</field>
+			<field name="grade_id" ref="school_base.school_grade_cpfg" />
+			<field name="specialty_id" ref="school_base.specialty_em" />
+		</record>
+
+		<record id="base.user_mcordova" model="res.users">
+			<field name="name">Miguel C&#243;rdova</field>
+			<field name="login">mcordova</field>
+			<field name="password">mcordova</field>
+		</record>
+		<record id="employee_mcordova" model="hr.employee">
+			<field name="name">Miguel</field>
+			<field name="last_name">C&#243;rdova</field>
+			<field name="user_id" ref="base.user_mcordova" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">active</field>
+			<field name="grade_id" ref="school_base.school_grade_cpfg" />
+			<field name="specialty_id" ref="school_base.specialty_em" />
+		</record>
+
+		<record id="base.user_inaranjo" model="res.users">
+			<field name="name">Iv&#225;n Naranjo</field>
+			<field name="login">inaranjo</field>
+			<field name="password">inaranjo</field>
+		</record>
+		<record id="employee_inaranjo" model="hr.employee">
+			<field name="name">Iv&#225;n</field>
+			<field name="last_name">Naranjo</field>
+			<field name="user_id" ref="base.user_inaranjo" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">passive</field>
+			<field name="title">Lcdo.</field>
+			<field name="grade_id" ref="school_base.school_grade_subm" />
+		</record>
+
+		<record id="base.user_egalarza" model="res.users">
+			<field name="name">Enrique Galarza</field>
+			<field name="login">egalarza</field>
+			<field name="password">egalarza</field>
+		</record>
+		<record id="employee_egalarza" model="hr.employee">
+			<field name="name">Enrique</field>
+			<field name="last_name">Galarza</field>
+			<field name="user_id" ref="base.user_egalarza" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">passive</field>
+			<field name="title">Lcdo.</field>
+			<field name="grade_id" ref="school_base.school_grade_subp" />
+		</record>
+
+		<record id="base.user_rvaca" model="res.users">
+			<field name="name">Rosario Vaca</field>
+			<field name="login">rvaca</field>
+			<field name="password">rvaca</field>
+		</record>
+		<record id="employee_rvaca" model="hr.employee">
+			<field name="name">Rosario</field>
+			<field name="last_name">Vaca</field>
+			<field name="user_id" ref="base.user_rvaca" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="title">Dra.</field>
+		</record>
+
+		<record id="base.user_mmerino" model="res.users">
+			<field name="name">Miguel Merino</field>
+			<field name="login">mmerino</field>
+			<field name="password">mmerino</field>
+		</record>
+		<record id="employee_mmerino" model="hr.employee">
+			<field name="name">Miguel</field>
+			<field name="last_name">Merino</field>
+			<field name="user_id" ref="base.user_mmerino" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="title">Lcdo.</field>
+		</record>
+
+		<record id="base.user_aintriago" model="res.users">
+			<field name="name">&#193;ngela Intriago</field>
+			<field name="login">aintriago</field>
+			<field name="password">aintriago</field>
+		</record>
+		<record id="employee_aintriago" model="hr.employee">
+			<field name="name">&#193;ngela</field>
+			<field name="last_name">Intriago</field>
+			<field name="user_id" ref="base.user_aintriago" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="title">Dra.</field>
+		</record>
+
+		<record id="base.user_cdelacruz" model="res.users">
+			<field name="name">Christian De La Cruz</field>
+			<field name="login">cdelacruz</field>
+			<field name="password">cdelacruz</field>
+		</record>
+		<record id="employee_cdelacruz" model="hr.employee">
+			<field name="name">Christian</field>
+			<field name="last_name">De La Cruz</field>
+			<field name="user_id" ref="base.user_cdelacruz" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="title">Lcdo.</field>
+		</record>
+
+		<record id="base.user_jgarcia" model="res.users">
+			<field name="name">Johnny Garc&#237;a</field>
+			<field name="login">jgarcia</field>
+			<field name="password">jgarcia</field>
+		</record>
+		<record id="employee_jgarcia" model="hr.employee">
+			<field name="name">Johnny</field>
+			<field name="last_name">Garc&#237;a</field>
+			<field name="user_id" ref="base.user_jgarcia" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="title">Dr.</field>
+		</record>
+
+		<record id="base.user_zgonzalez" model="res.users">
+			<field name="name">Zoa Gonzalez</field>
+			<field name="login">zgonzalez</field>
+			<field name="password">zgonzalez</field>
+		</record>
+		<record id="employee_zgonzalez" model="hr.employee">
+			<field name="name">Zoa</field>
+			<field name="last_name">Gonzalez</field>
+			<field name="user_id" ref="base.user_zgonzalez" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="title">Lcda.</field>
+			<field name="suffix">Msc.</field>
+		</record>
+
+		<record id="base.user_mviteri" model="res.users">
+			<field name="name">Miriam Viteri</field>
+			<field name="login">mviteri</field>
+			<field name="password">mviteri</field>
+		</record>
+		<record id="employee_mviteri" model="hr.employee">
+			<field name="name">Miriam</field>
+			<field name="last_name">Viteri</field>
+			<field name="user_id" ref="base.user_mviteri" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="title">Lcda.</field>
+		</record>
+
+		<record id="base.user_gicaza" model="res.users">
+			<field name="name">Gabriela Icaza</field>
+			<field name="login">gicaza</field>
+			<field name="password">gicaza</field>
+		</record>
+		<record id="employee_gicaza" model="hr.employee">
+			<field name="name">Gabriela</field>
+			<field name="last_name">Icaza</field>
+			<field name="user_id" ref="base.user_gicaza" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="title">Psic.</field>
+		</record>
+
+		<record id="base.user_gfienco" model="res.users">
+			<field name="name">Grey Fienco</field>
+			<field name="login">gfienco</field>
+			<field name="password">gfienco</field>
+		</record>
+		<record id="employee_gfienco" model="hr.employee">
+			<field name="name">Grey</field>
+			<field name="last_name">Fienco</field>
+			<field name="user_id" ref="base.user_gfienco" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="title">Dra.</field>
+		</record>
+
+		<record id="base.user_byepez" model="res.users">
+			<field name="name">Boris Yepez</field>
+			<field name="login">byepez</field>
+			<field name="password">byepez</field>
+		</record>
+		<record id="employee_byepez" model="hr.employee">
+			<field name="name">Boris</field>
+			<field name="last_name">Yepez</field>
+			<field name="user_id" ref="base.user_byepez" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="title">Ing.</field>
+		</record>
+
+		<record id="base.user_ncastro" model="res.users">
+			<field name="name">Narcisa Castro</field>
+			<field name="login">ncastro</field>
+			<field name="password">ncastro</field>
+		</record>
+		<record id="employee_ncastro" model="hr.employee">
+			<field name="name">Narcisa</field>
+			<field name="last_name">Castro</field>
+			<field name="user_id" ref="base.user_ncastro" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="title">Ec.</field>
+		</record>
+
+		<record id="base.user_erobles" model="res.users">
+			<field name="name">Elena Robles</field>
+			<field name="login">erobles</field>
+			<field name="password">erobles</field>
+		</record>
+		<record id="employee_erobles" model="hr.employee">
+			<field name="name">Elena</field>
+			<field name="last_name">Robles</field>
+			<field name="user_id" ref="base.user_erobles" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="title">Ec.</field>
+			<field name="suffix">MBA.</field>
+		</record>
+
+		<record id="base.user_lhaz" model="res.users">
+			<field name="name">L&#237;cide Haz</field>
+			<field name="login">lhaz</field>
+			<field name="password">lhaz</field>
+		</record>
+		<record id="employee_lhaz" model="hr.employee">
+			<field name="name">L&#237;cide</field>
+			<field name="last_name">Haz</field>
+			<field name="user_id" ref="base.user_lhaz" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="title">Ing.</field>
+		</record>
+
+		<record id="base.user_valvarez" model="res.users">
+			<field name="name">Vilma Alvarez</field>
+			<field name="login">valvarez</field>
+			<field name="password">valvarez</field>
+		</record>
+		<record id="employee_valvarez" model="hr.employee">
+			<field name="name">Vilma</field>
+			<field name="last_name">Alvarez</field>
+			<field name="user_id" ref="base.user_valvarez" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="title">Ing.</field>
+			<field name="suffix">MAE</field>
+		</record>
+
+		<record id="base.user_fhurtado" model="res.users">
+			<field name="name">Fabi&#225;n Hurtado</field>
+			<field name="login">fhurtado</field>
+			<field name="password">fhurtado</field>
+		</record>
+		<record id="employee_fhurtado" model="hr.employee">
+			<field name="name">Fabi&#225;n</field>
+			<field name="last_name">Hurtado</field>
+			<field name="user_id" ref="base.user_fhurtado" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="title">Ing.</field>
+		</record>
+
+		<record id="base.user_msanchez" model="res.users">
+			<field name="name">Mario S&#225;nchez</field>
+			<field name="login">msanchez</field>
+			<field name="password">msanchez</field>
+		</record>
+		<record id="employee_msanchez" model="hr.employee">
+			<field name="name">Mario</field>
+			<field name="last_name">S&#225;nchez</field>
+			<field name="user_id" ref="base.user_msanchez" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="title">Ing.</field>
+		</record>
+
+		<record id="base.user_carcos" model="res.users">
+			<field name="name">C&#233;sar Arcos</field>
+			<field name="login">carcos</field>
+			<field name="password">carcos</field>
+		</record>
+		<record id="employee_carcos" model="hr.employee">
+			<field name="name">C&#233;sar</field>
+			<field name="last_name">Arcos</field>
+			<field name="user_id" ref="base.user_carcos" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="title">Econ.</field>
+		</record>
+
+		<record id="base.user_egoya" model="res.users">
+			<field name="name">Ernesto Goya</field>
+			<field name="login">egoya</field>
+			<field name="password">egoya</field>
+		</record>
+		<record id="employee_egoya" model="hr.employee">
+			<field name="name">Ernesto</field>
+			<field name="last_name">Goya</field>
+			<field name="user_id" ref="base.user_egoya" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="title">Ec.</field>
+		</record>
+
+		<record id="base.user_rmoyano" model="res.users">
+			<field name="name">Roberto Moyano</field>
+			<field name="login">rmoyano</field>
+			<field name="password">rmoyano</field>
+		</record>
+		<record id="employee_rmoyano" model="hr.employee">
+			<field name="name">Roberto</field>
+			<field name="last_name">Moyano</field>
+			<field name="user_id" ref="base.user_rmoyano" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="title">Ab.</field>
+		</record>
+
+		<record id="base.user_fguerrero" model="res.users">
+			<field name="name">Fabricio Guerrero</field>
+			<field name="login">fguerrero</field>
+			<field name="password">fguerrero</field>
+		</record>
+		<record id="employee_fguerrero" model="hr.employee">
+			<field name="name">Fabricio</field>
+			<field name="last_name">Guerrero</field>
+			<field name="user_id" ref="base.user_fguerrero" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="title">Ab.</field>
+		</record>
+
+		<record id="base.user_lamaya" model="res.users">
+			<field name="name">Luis Amaya</field>
+			<field name="login">lamaya</field>
+			<field name="password">lamaya</field>
+		</record>
+		<record id="employee_lamaya" model="hr.employee">
+			<field name="name">Luis</field>
+			<field name="last_name">Amaya</field>
+			<field name="user_id" ref="base.user_lamaya" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="title">Ab.</field>
+		</record>
+
+		<record id="base.user_jpozo" model="res.users">
+			<field name="name">Jaime Pozo</field>
+			<field name="login">jpozo</field>
+			<field name="password">jpozo</field>
+		</record>
+		<record id="employee_jpozo" model="hr.employee">
+			<field name="name">Jaime</field>
+			<field name="last_name">Pozo</field>
+			<field name="user_id" ref="base.user_jpozo" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">active</field>
+			<field name="title">Ab.</field>
+			<field name="grade_id" ref="school_base.school_grade_subm" />
+			<field name="specialty_id" ref="school_base.specialty_im" />
+		</record>
+
+		<record id="base.user_jbarragan" model="res.users">
+			<field name="name">Jes&#250;s Barrag&#225;n</field>
+			<field name="login">jbarragan</field>
+			<field name="password">jbarragan</field>
+		</record>
+		<record id="employee_jbarragan" model="hr.employee">
+			<field name="name">Jes&#250;s</field>
+			<field name="last_name">Barrag&#225;n</field>
+			<field name="user_id" ref="base.user_jbarragan" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">passive</field>
+			<field name="suffix">Msc.</field>
+			<field name="grade_id" ref="school_base.school_grade_subp" />
+		</record>
+
+		<record id="base.user_arodriguez" model="res.users">
+			<field name="name">Aida Rodriguez</field>
+			<field name="login">arodriguez</field>
+			<field name="password">arodriguez</field>
+		</record>
+		<record id="employee_arodriguez" model="hr.employee">
+			<field name="name">Aida</field>
+			<field name="last_name">Rodriguez</field>
+			<field name="user_id" ref="base.user_arodriguez" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="title">Lcda.</field>
+		</record>
+		<!--
+			second period
+		-->
+		<record id="base.user_msilva" model="res.users">
+			<field name="name">Marco Silva</field>
+			<field name="login">msilva</field>
+			<field name="password">msilva</field>
+		</record>
+		<record id="employee_msilva" model="hr.employee">
+			<field name="name">Marco</field>
+			<field name="last_name">Silva</field>
+			<field name="user_id" ref="base.user_msilva" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">passive</field>
+			<field name="title">Ab.</field>
+			<field name="grade_id" ref="school_base.school_grade_subm" />
+		</record>
+
+		<record id="base.user_jespinoza" model="res.users">
+			<field name="name">José Espinoza</field>
+			<field name="login">jespinoza</field>
+			<field name="password">jespinoza</field>
+		</record>
+		<record id="employee_jespinoza" model="hr.employee">
+			<field name="name">José</field>
+			<field name="last_name">Espinoza</field>
+			<field name="user_id" ref="base.user_jespinoza" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">passive</field>
+			<field name="title">Lcdo.</field>
+			<field name="grade_id" ref="school_base.school_grade_subp" />
+		</record>
+
+		<record id="base.user_dangamarca" model="res.users">
+			<field name="name">Domingo Angamarca</field>
+			<field name="login">dangamarca</field>
+			<field name="password">dangamarca</field>
+		</record>
+		<record id="employee_dangamarca" model="hr.employee">
+			<field name="name">Domingo</field>
+			<field name="last_name">Angamarca</field>
+			<field name="user_id" ref="base.user_dangamarca" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">passive</field>
+			<field name="title">Lcdo.</field>
+			<field name="grade_id" ref="school_base.school_grade_subp" />
+		</record>
+
+		<record id="base.user_eorejuela" model="res.users">
+			<field name="name">Eduardo Orejuela</field>
+			<field name="login">eorejuela</field>
+			<field name="password">eorejuela</field>
+		</record>
+		<record id="employee_eorejuela" model="hr.employee">
+			<field name="name">Eduardo</field>
+			<field name="last_name">Orejuela</field>
+			<field name="user_id" ref="base.user_eorejuela" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="title">Dr. </field>
+		</record>
+
+		<record id="base.user_ebriones" model="res.users">
+			<field name="name">El&#237;as Briones</field>
+			<field name="login">ebriones</field>
+			<field name="password">ebriones</field>
+		</record>
+		<record id="employee_ebriones" model="hr.employee">
+			<field name="name">El&#237;as</field>
+			<field name="last_name">Briones</field>
+			<field name="user_id" ref="base.user_ebriones" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="title">Psic.</field>
+		</record>
+
+		<record id="base.user_mdelatorre" model="res.users">
+			<field name="name">M&#243;nica De La Torre</field>
+			<field name="login">mdelatorre</field>
+			<field name="password">mdelatorre</field>
+		</record>
+		<record id="employee_mdelatorre" model="hr.employee">
+			<field name="name">M&#243;nica</field>
+			<field name="last_name">De La Torre</field>
+			<field name="user_id" ref="base.user_mdelatorre" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="title">Lcda.</field>
+		</record>
+
+		<record id="base.user_mmerino" model="res.users">
+			<field name="name">Miguel Merino</field>
+			<field name="login">mmerino</field>
+			<field name="password">mmerino</field>
+		</record>
+		<record id="employee_mmerino" model="hr.employee">
+			<field name="name">Miguel</field>
+			<field name="last_name">Merino</field>
+			<field name="user_id" ref="base.user_mmerino" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="title">Lcdo.</field>
+		</record>
+
+		<record id="base.user_avera" model="res.users">
+			<field name="name">Ana Mar&#237;a Vera</field>
+			<field name="login">avera</field>
+			<field name="password">avera</field>
+		</record>
+		<record id="employee_avera" model="hr.employee">
+			<field name="name">Ana Mar&#237;a</field>
+			<field name="last_name">Vera</field>
+			<field name="user_id" ref="base.user_avera" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="title">Lcda.</field>
+		</record>
+
+		<record id="base.user_fcevallos" model="res.users">
+			<field name="name">Fernando Cevallos</field>
+			<field name="login">fcevallos</field>
+			<field name="password">fcevallos</field>
+		</record>
+		<record id="employee_fcevallos" model="hr.employee">
+			<field name="name">Fernando</field>
+			<field name="last_name">Cevallos</field>
+			<field name="user_id" ref="base.user_fcevallos" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="suffix">Msc.</field>
+		</record>
+
+		<record id="base.user_lhurtado" model="res.users">
+			<field name="name">Luis Hurtado</field>
+			<field name="login">lhurtado</field>
+			<field name="password">lhurtado</field>
+		</record>
+		<record id="employee_lhurtado" model="hr.employee">
+			<field name="name">Luis</field>
+			<field name="last_name">Hurtado</field>
+			<field name="user_id" ref="base.user_lhurtado" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="title">Lcdo.</field>
+		</record>
+
+		<record id="base.user_ncastro" model="res.users">
+			<field name="name">Narcisa Castro</field>
+			<field name="login">ncastro</field>
+			<field name="password">ncastro</field>
+		</record>
+		<record id="employee_ncastro" model="hr.employee">
+			<field name="name">Narcisa</field>
+			<field name="last_name">Castro</field>
+			<field name="user_id" ref="base.user_ncastro" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="title">Econ.</field>
+		</record>
+
+		<record id="base.user_bandrade" model="res.users">
+			<field name="name">Billy  Andrade</field>
+			<field name="login">bandrade</field>
+			<field name="password">bandrade</field>
+		</record>
+		<record id="employee_bandrade" model="hr.employee">
+			<field name="name">Billy </field>
+			<field name="last_name">Andrade</field>
+			<field name="user_id" ref="base.user_bandrade" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="title">Ing.</field>
+		</record>
+
+		<record id="base.user_msanchez" model="res.users">
+			<field name="name">Mario S&#225;nchez</field>
+			<field name="login">msanchez</field>
+			<field name="password">msanchez</field>
+		</record>
+		<record id="employee_msanchez" model="hr.employee">
+			<field name="name">Mario</field>
+			<field name="last_name">S&#225;nchez</field>
+			<field name="user_id" ref="base.user_msanchez" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="title">Ing.</field>
+		</record>
+
+		<record id="base.user_isoto" model="res.users">
+			<field name="name">Ingrid Soto</field>
+			<field name="login">isoto</field>
+			<field name="password">isoto</field>
+		</record>
+		<record id="employee_isoto" model="hr.employee">
+			<field name="name">Ingrid</field>
+			<field name="last_name">Soto</field>
+			<field name="user_id" ref="base.user_isoto" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="title">Ing.</field>
+			<field name="suffix">Msc.</field>
+		</record>
+
+		<record id="base.user_ecalero" model="res.users">
+			<field name="name">Edmundo Calero</field>
+			<field name="login">ecalero</field>
+			<field name="password">ecalero</field>
+		</record>
+		<record id="employee_ecalero" model="hr.employee">
+			<field name="name">Edmundo</field>
+			<field name="last_name">Calero</field>
+			<field name="user_id" ref="base.user_ecalero" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">passive</field>
+			<field name="title">Ec.</field>
+			<field name="grade_id" ref="school_base.school_grade_cpnv" />
+		</record>
+
+		<record id="base.user_jmartinez" model="res.users">
+			<field name="name">Jorge Mart&#237;nez</field>
+			<field name="login">jmartinez</field>
+			<field name="password">jmartinez</field>
+		</record>
+		<record id="employee_jmartinez" model="hr.employee">
+			<field name="name">Jorge</field>
+			<field name="last_name">Mart&#237;nez</field>
+			<field name="user_id" ref="base.user_jmartinez" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">active</field>
+			<field name="grade_id" ref="school_base.school_grade_subs" />
+			<field name="specialty_id" ref="school_base.specialty_ad" />
+		</record>
+
+		<record id="base.user_mcordova" model="res.users">
+			<field name="name">Miguel C&#243;rdova</field>
+			<field name="login">mcordova</field>
+			<field name="password">mcordova</field>
+		</record>
+		<record id="employee_mcordova" model="hr.employee">
+			<field name="name">Miguel</field>
+			<field name="last_name">C&#243;rdova</field>
+			<field name="user_id" ref="base.user_mcordova" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">active</field>
+		</record>
+
+		<record id="base.user_hcrespo" model="res.users">
+			<field name="name">Hern&#225;n Crespo</field>
+			<field name="login">hcrespo</field>
+			<field name="password">hcrespo</field>
+		</record>
+		<record id="employee_hcrespo" model="hr.employee">
+			<field name="name">Hern&#225;n</field>
+			<field name="last_name">Crespo</field>
+			<field name="user_id" ref="base.user_hcrespo" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">active</field>
+			<field name="grade_id" ref="school_base.school_grade_tnnv" />
+		</record>
+
+		<record id="base.user_jalvarez" model="res.users">
+			<field name="name">Jorge Alvarez</field>
+			<field name="login">jalvarez</field>
+			<field name="password">jalvarez</field>
+		</record>
+		<record id="employee_jalvarez" model="hr.employee">
+			<field name="name">Jorge</field>
+			<field name="last_name">Alvarez</field>
+			<field name="user_id" ref="base.user_jalvarez" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">passive</field>
+			<field name="suffix">Msc.</field>
+			<field name="grade_id" ref="school_base.school_grade_cpnv" />
+		</record>
+
+		<record id="base.user_gabad" model="res.users">
+			<field name="name">Gabriel Abad</field>
+			<field name="login">gabad</field>
+			<field name="password">gabad</field>
+		</record>
+		<record id="employee_gabad" model="hr.employee">
+			<field name="name">Gabriel</field>
+			<field name="last_name">Abad</field>
+			<field name="user_id" ref="base.user_gabad" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">active</field>
+			<field name="grade_id" ref="school_base.school_grade_cpfg" />
+			<field name="specialty_id" ref="school_base.specialty_em" />
+		</record>
+
+		<record id="base.user_hromero" model="res.users">
+			<field name="name">H&#233;ctor Romero</field>
+			<field name="login">hromero</field>
+			<field name="password">hromero</field>
+		</record>
+		<record id="employee_hromero" model="hr.employee">
+			<field name="name">H&#233;ctor</field>
+			<field name="last_name">Romero</field>
+			<field name="user_id" ref="base.user_hromero" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="title">Ab.</field>
+		</record>
+
+		<record id="base.user_pcarrera" model="res.users">
+			<field name="name">Polo Carrera</field>
+			<field name="login">pcarrera</field>
+			<field name="password">pcarrera</field>
+		</record>
+		<record id="employee_pcarrera" model="hr.employee">
+			<field name="name">Polo</field>
+			<field name="last_name">Carrera</field>
+			<field name="user_id" ref="base.user_pcarrera" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">active</field>
+			<field name="suffix">MBA.</field>
+			<field name="grade_id" ref="school_base.school_grade_cpcb" />
+			<field name="specialty_id" ref="school_base.specialty_ab" />
+		</record>
+
+		<record id="base.user_nmendieta" model="res.users">
+			<field name="name">Nadia Mendieta</field>
+			<field name="login">nmendieta</field>
+			<field name="password">nmendieta</field>
+		</record>
+		<record id="employee_nmendieta" model="hr.employee">
+			<field name="name">Nadia</field>
+			<field name="last_name">Mendieta</field>
+			<field name="user_id" ref="base.user_nmendieta" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="suffix">Msc.</field>
+		</record>
+
+		<record id="base.user_rdelcampo" model="res.users">
+			<field name="name">Renato del Campo</field>
+			<field name="login">rdelcampo</field>
+			<field name="password">rdelcampo</field>
+		</record>
+		<record id="employee_rdelcampo" model="hr.employee">
+			<field name="name">Renato</field>
+			<field name="last_name">del Campo</field>
+			<field name="user_id" ref="base.user_rdelcampo" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">functionary</field>
+			<field name="title">Dr.</field>
+		</record>
+
+		<record id="base.user_epinto" model="res.users">
+			<field name="name">Edwin Pinto</field>
+			<field name="login">epinto</field>
+			<field name="password">epinto</field>
+		</record>
+		<record id="employee_epinto" model="hr.employee">
+			<field name="name">Edwin</field>
+			<field name="last_name">Pinto</field>
+			<field name="user_id" ref="base.user_epinto" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">active</field>
+			<field name="grade_id" ref="school_base.school_grade_cpcb" />
+		</record>
+
+		<record id="base.user_jproano" model="res.users">
+			<field name="name">Juan Proa&#241;o</field>
+			<field name="login">jproano</field>
+			<field name="password">jproano</field>
+		</record>
+		<record id="employee_jproano" model="hr.employee">
+			<field name="name">Juan</field>
+			<field name="last_name">Proa&#241;o</field>
+			<field name="user_id" ref="base.user_jproano" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">active</field>
+			<field name="grade_id" ref="school_base.school_grade_cpnv" />
+			<field name="specialty_id" ref="school_base.specialty_em" />
+		</record>
+
+		<record id="base.user_jcardenas" model="res.users">
+			<field name="name">Jes&#250;s C&#225;rdenas</field>
+			<field name="login">jcardenas</field>
+			<field name="password">jcardenas</field>
+		</record>
+		<record id="employee_jcardenas" model="hr.employee">
+			<field name="name">Jes&#250;s</field>
+			<field name="last_name">C&#225;rdenas</field>
+			<field name="user_id" ref="base.user_jcardenas" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">active</field>
+			<field name="grade_id" ref="school_base.school_grade_cpfg" />
+			<field name="specialty_id" ref="school_base.specialty_em" />
+		</record>
+
+		<record id="base.user_uiniguez" model="res.users">
+			<field name="name">Ulises I&#241;iguez</field>
+			<field name="login">uiniguez</field>
+			<field name="password">uiniguez</field>
+		</record>
+		<record id="employee_uiniguez" model="hr.employee">
+			<field name="name">Ulises</field>
+			<field name="last_name">I&#241;iguez</field>
+			<field name="user_id" ref="base.user_uiniguez" />
+			<field name="department_id" ref="dep_teachers" />
+			<field name="job_id" ref="job_teacher" />
+			<field name="status">active</field>
+			<field name="title">Ing.</field>
+			<field name="grade_id" ref="school_base.school_grade_cpfg" />
+		</record>
+
+    </data>
+</openerp>

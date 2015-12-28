@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+
+    <data><!-- noupdate="1"-->
+    	<!--record model="account.account" id="account_expense_scholarship">
+    		<field name="code">52.01.04.01</field>
+    		<field name="name">Becas</field>
+    		<field name="type">other</field>
+    		<field name="user_type" ref="account.data_account_type_expense" />
+    	</record>
+    	<record model="school.training.financial.concept" id="concept_scholarship">
+			<field name="name">Beca</field>
+			<field name="property_account_expense" ref="account_expense_scholarship" />
+		</record-->
+
+		<!--record model="school.training.financial.concept" id="concept_installation">
+			<field name="name">Instalaci&#243;n</field>
+		</record>
+    	<record model="school.training.financial.concept" id="concept_passage">
+			<field name="name">Pasaje</field>
+		</record>
+		<record model="school.training.financial.concept" id="concept_viaticum">
+			<field name="name">Vi&#225;ticos</field>
+		</record>
+    	<record model="school.training.financial.concept" id="concept_compensation">
+			<field name="name">Compensaci&#243;n</field>
+		</record>
+		<record model="school.training.financial.concept" id="concept_residency">
+			<field name="name">Residencia</field>
+		</record-->
+    </data>
+
+</openerp>

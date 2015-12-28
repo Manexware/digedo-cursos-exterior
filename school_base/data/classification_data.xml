@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1"><!-- noupdate="1"-->
+
+		<record model="school.classification" id="classification_arm">
+			<field name="code">ARM</field>
+			<field name="name">Arma</field>
+		</record>
+
+		<record model="school.classification" id="classification_tnc">
+			<field name="code">TNC</field>
+			<field name="name">T&#233;cnico</field>
+		</record>
+
+		<record model="school.classification" id="classification_srv">
+			<field name="code">SRV</field>
+			<field name="name">Servicio</field>
+		</record>
+
+		<record model="school.classification" id="classification_esp">
+			<field name="code">ESP</field>
+			<field name="name">Especialista</field>
+		</record>
+
+    </data>
+</openerp>

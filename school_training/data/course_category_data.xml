@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+
+    <data noupdate="1"><!---->
+    	<record model="school.training.category" id="cat_1">
+			<field name="name">Acuerdos Internacionales</field>
+		</record>
+		<record model="school.training.category" id="cat_2">
+			<field name="name">Cursos en Compa&#241;ias Proveedoras</field>
+		</record>
+    	<record model="school.training.category" id="cat_3">
+			<field name="name">Cursos en Institutos Militares</field>
+		</record>
+		<record model="school.training.category" id="cat_4">
+			<field name="name">Giras Cruceros Internacionales</field>
+		</record>
+    	<record model="school.training.category" id="cat_5">
+			<field name="name">Giras Internacionales</field>
+		</record>
+		<record model="school.training.category" id="cat_6">
+			<field name="name">Pasant&#237;as</field>
+		</record>
+    	<record model="school.training.category" id="cat_7">
+			<field name="name">Profesor Invitado</field>
+		</record>
+		<record model="school.training.category" id="cat_8">
+			<field name="name">Varios</field>
+		</record>
+    </data>
+
+</openerp>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+		<!--
+			TEACHER (EMPLOYEE)
+		-->
+		<record id="view_school_teacher_form" model="ir.ui.view">
+			<field name="name">school.teacher.form</field>
+			<field name="model">hr.employee</field>
+			<field name="inherit_id" ref="hr.view_employee_form" />
+			<field name="arch" type="xml">
+				<field name="name" position="after">
+					<field name="last_name" colspan="6" />
+				</field>
+				<!--field name="sinid" position="replace" /-->
+				<field name="birthday" position="after">
+					<field name="blood_type" />
+				</field>
+				<field name="coach_id" position="after">
+					<field name="status" />
+					<field name="title" />
+					<field name="suffix" />
+				</field>
+				<xpath expr="//page[2]" position="after">
+					<page string="Military Information">
+						<group>
+							<field name="grade_id" />
+							<field name="specialty_id" />
+							<field name="admission_date" />
+							<field name="last_ascent_date" />
+							<separator colspan="4" string="Features" />
+							<field name="height" />
+							<newline />
+							<field name="eye_color" />
+							<field name="hair_color" />
+							<separator colspan="4" string="Other" />
+							<field name="shirt_size" />
+							<field name="pants_size" />
+							<field name="shoe_size" />
+							<field name="cap_size" />
+						</group>
+					</page>
+				</xpath>
+			</field>
+		</record>
+		<!--
+			FILTER VIEW
+		-->
+		<record id="view_school_person_filter" model="ir.ui.view">
+			<field name="name">Persons</field>
+			<field name="model">hr.employee</field>
+			<field name="inherit_id" ref="hr.view_employee_filter" />
+			<field name="arch" type="xml">
+				<field name="name" position="before">
+					<field name="last_name" />
+					<field name="grade_id" widget="selection" />
+					<field name="specialty_id" widget="selection" />
+				</field>
+				<xpath expr="//group[@expand='0']" position="replace">
+					<group string="Group By...">
+						<filter string="Grade" domain="[]" context="{'group_by':'grade_id'}" />
+						<filter string="Specialty" domain="[]" context="{'group_by':'specialty_id'}" />
+					</group>
+				</xpath>
+			</field>
+		</record>
+		<!--
+			TREE VIEW
+		-->
+		<record id="view_school_teacher_tree" model="ir.ui.view">
+			<field name="name">school.teacher.tree</field>
+			<field name="model">hr.employee</field>
+			<field name="inherit_id" ref="hr.view_employee_tree" />
+			<field name="arch" type="xml">
+				<field name="name" position="replace">
+					<field name="full_name" />
+				</field>
+				<field name="work_phone" position="replace" />
+				<field name="work_email" position="replace" />
+				<field name="parent_id" position="replace">
+					<field name="ssnid" />
+					<field name="grade_id" invisible="1" />
+					<field name="specialty_id" invisible="1" />
+				</field>
+			</field>
+		</record>
+		<!--
+			DELETE EMPLOYEE MENU
+		-->
+		<delete model="ir.ui.menu" search="[('name', '=', 'Employees'),('sequence', '=', 3)]" />
+		<!--
+			STUDENT VIEW
+		-->
+		<record id="act_school_employee" model="ir.actions.act_window">
+			<field name="name">Employees</field>
+			<field name="res_model">hr.employee</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_school_person_filter"/>
+		</record>
+
+		
+    </data>
+</openerp>

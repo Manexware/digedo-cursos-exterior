@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+		<record id="view_school_grade_form" model="ir.ui.view">
+			<field name="name">school.grade.form</field>
+			<field name="model">school.grade</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Grade">
+					<group colspan="4" col="2">
+						<field name="code" />
+						<field name="name" />
+						<field name="is_official" />
+					</group>
+				</form>
+			</field>
+		</record>
+
+		<record id="view_school_grade_tree" model="ir.ui.view">
+			<field name="name">school.grade.tree</field>
+			<field name="model">school.grade</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Grade">
+					<field name="code" />
+					<field name="name" />
+					<field name="is_official" />
+				</tree>
+			</field>
+		</record>
+
+		<record id="act_school_grade" model="ir.actions.act_window">
+			<field name="name">Grade</field>
+			<field name="res_model">school.grade</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<!--field name="search_view_id" ref="view_school_grade_search" /-->
+		</record>
+
+
+
+	</data>
+</openerp>

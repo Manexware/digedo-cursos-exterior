@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<openerp>
+    <data noupdate="1" >
+
+		<record model="school.grade" id="school_grade_alm">
+			<field name="name">Almirante</field>
+			<field name="code">ALM</field>
+			<field name="is_official">1</field>
+		</record>
+		<record model="school.grade" id="school_grade_valm">
+			<field name="name">Vicealmirante</field>
+			<field name="code">VALM</field>
+			<field name="is_official">True</field>
+		</record>
+		<record model="school.grade" id="school_grade_calm">
+			<field name="name">Contralmirante</field>
+			<field name="code">CALM</field>
+			<field name="is_official">True</field>
+		</record>
+		<record model="school.grade" id="school_grade_cpnv">
+			<field name="name">Capit&#225;n de Navio</field>
+			<field name="code">CPNV</field>
+			<field name="is_official">True</field>
+		</record>
+		<record model="school.grade" id="school_grade_cpfg">
+			<field name="name">Capit&#225;n de Fragata</field>
+			<field name="code">CPFG</field>
+			<field name="is_official">True</field>
+		</record>
+		<record model="school.grade" id="school_grade_cpcb">
+			<field name="name">Capit&#225;n de Corbeta</field>
+			<field name="code">CPCB</field>
+			<field name="is_official">True</field>
+		</record>
+		<record model="school.grade" id="school_grade_tnnv">
+			<field name="name">Teniente de Navio</field>
+			<field name="code">TNNV</field>
+			<field name="is_official">True</field>
+		</record>
+		<record model="school.grade" id="school_grade_tnfg">
+			<field name="name">Teniente de Fragata</field>
+			<field name="code">TNFG</field>
+			<field name="is_official">True</field>
+		</record>
+		<record model="school.grade" id="school_grade_alfg">
+			<field name="name">Alferez de Fragata</field>
+			<field name="code">ALFG</field>
+			<field name="is_official">True</field>
+		</record>
+		<record model="school.grade" id="school_grade_gama">
+			<field name="name">Guardia Marina</field>
+			<field name="code">GAMA</field>
+		</record>
+		<record model="school.grade" id="school_grade_subm">
+			<field name="name">Suboficial Mayor</field>
+			<field name="code">SUBM</field>
+		</record>
+		<record model="school.grade" id="school_grade_subp">
+			<field name="name">Suboficial Primero</field>
+			<field name="code">SUBP</field>
+		</record>
+		<record model="school.grade" id="school_grade_subs">
+			<field name="name">Suboficial Segundo</field>
+			<field name="code">SUBS</field>
+		</record>
+		<record model="school.grade" id="school_grade_sgop">
+			<field name="name">Sargento Primero</field>
+			<field name="code">SGOP</field>
+		</record>
+		<record model="school.grade" id="school_grade_sgos">
+			<field name="name">Sargento Segundo</field>
+			<field name="code">SGOS</field>
+		</record>
+		<record model="school.grade" id="school_grade_cbop">
+			<field name="name">Cabo Primero</field>
+			<field name="code">CBOP</field>
+		</record>
+		<record model="school.grade" id="school_grade_cbos">
+			<field name="name">Cabo Segundo</field>
+			<field name="code">CBOS</field>
+		</record>
+		<record model="school.grade" id="school_grade_maro">
+			<field name="name">Marinero</field>
+			<field name="code">MARO</field>
+		</record>
+		<record model="school.grade" id="school_grade_grum">
+			<field name="name">Grumete</field>
+			<field name="code">GRUM</field>
+		</record>
+
+	</data>
+</openerp>

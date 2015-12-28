@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1"><!-- noupdate="1"-->
+
+		<record model="school.specialty" id="specialty_su">
+			<field name="code">SU</field>
+			<field name="name">Superficie</field>
+		</record>
+
+		<record model="school.specialty" id="specialty_ss">
+			<field name="code">SS</field>
+			<field name="name">Submarinos</field>
+		</record>
+
+		<record model="school.specialty" id="specialty_av">
+			<field name="code">AV</field>
+			<field name="name">Aviaci&#243;n</field>
+		</record>
+
+		<record model="school.specialty" id="specialty_hi">
+			<field name="code">HI</field>
+			<field name="name">Hidrografia</field>
+		</record>
+
+		<record model="school.specialty" id="specialty_et">
+			<field name="code">ET</field>
+			<field name="name">Electr&#243;nica</field>
+		</record>
+
+		<record model="school.specialty" id="specialty_cn">
+			<field name="code">CN</field>
+			<field name="name">Ciencias Navales</field>
+		</record>
+
+		<record model="school.specialty" id="specialty_mc">
+			<field name="code">MC</field>
+			<field name="name">Mec&#225;nica</field>
+		</record>
+
+		<record model="school.specialty" id="specialty_el">
+			<field name="code">EL</field>
+			<field name="name">Electricidad</field>
+		</record>
+
+		<record model="school.specialty" id="specialty_im">
+			<field name="code">IM</field>
+			<field name="name">Infanteria de Marina</field>
+		</record>
+
+		<record model="school.specialty" id="specialty_in">
+			<field name="code">IN</field>
+			<field name="name">Inteligencia</field>
+		</record>
+
+		<record model="school.specialty" id="specialty_gc">
+			<field name="code">GC</field>
+			<field name="name">Guardacostas</field>
+		</record>
+
+		<record model="school.specialty" id="specialty_ad">
+			<field name="code">AD</field>
+			<field name="name">Administraci&#243;n</field>
+		</record>
+
+		<record model="school.specialty" id="specialty_ab">
+			<field name="code">AB</field>
+			<field name="name">Abastecimientos</field>
+		</record>
+
+		<record model="school.specialty" id="specialty_if">
+			<field name="code">IF</field>
+			<field name="name">Inform&#225;tica</field>
+		</record>
+
+		<record model="school.specialty" id="specialty_sn">
+			<field name="code">SN</field>
+			<field name="name">Sanidad</field>
+		</record>
+
+		<record model="school.specialty" id="specialty_ch">
+			<field name="code">CH</field>
+			<field name="name">Chofer</field>
+		</record>
+
+		<record model="school.specialty" id="specialty_cm">
+			<field name="code">CM</field>
+			<field name="name">C&#225;mara</field>
+		</record>
+
+		<record model="school.specialty" id="specialty_cc">
+			<field name="code">CC</field>
+			<field name="name">Cocinero</field>
+		</record>
+
+		<record model="school.specialty" id="specialty_st">
+			<field name="code">ST</field>
+			<field name="name">Sastre</field>
+		</record>
+
+		<record model="school.specialty" id="specialty_pq">
+			<field name="code">PQ</field>
+			<field name="name">Peluquero</field>
+		</record>
+
+		<record model="school.specialty" id="specialty_mu">
+			<field name="code">MU</field>
+			<field name="name">M&#250;sico</field>
+		</record>
+
+		<record model="school.specialty" id="specialty_a-">
+			<field name="code">A&#209;</field>
+			<field name="name">Alba&#241;il</field>
+		</record>
+
+		<record model="school.specialty" id="specialty_rp">
+			<field name="code">RP</field>
+			<field name="name">Reparaciones</field>
+		</record>
+
+		<record model="school.specialty" id="specialty_ad">
+			<field name="code">AD</field>
+			<field name="name">Administraci&#243;n</field>
+		</record>
+
+		<record model="school.specialty" id="specialty_jt">
+			<field name="code">JT</field>
+			<field name="name">Justicia</field>
+		</record>
+
+		<record model="school.specialty" id="specialty_ig">
+			<field name="code">IG</field>
+			<field name="name">Ingeniero</field>
+		</record>
+
+		<record model="school.specialty" id="specialty_md">
+			<field name="code">MD</field>
+			<field name="name">M&#233;dico</field>
+		</record>
+
+		<record model="school.specialty" id="specialty_od">
+			<field name="code">OD</field>
+			<field name="name">Odont&#243;logo</field>
+		</record>
+
+		<record model="school.specialty" id="specialty_em">
+			<field name="code">EM</field>
+			<field name="name">Estado Mayor</field>
+		</record>
+
+		<record model="school.specialty" id="specialty_emc">
+			<field name="code">EMC</field>
+			<field name="name">Estado Mayor Conjunto</field>
+		</record>
+
+		<record model="school.specialty" id="specialty_ems">
+			<field name="code">EMS</field>
+			<field name="name">Estado Mayor Servicio</field>
+		</record>
+
+		<record model="school.specialty" id="specialty_csm">
+			<field name="code">CSM</field>
+			<field name="name">Curso Superior Militar</field>
+		</record>
+
+    </data>
+</openerp>

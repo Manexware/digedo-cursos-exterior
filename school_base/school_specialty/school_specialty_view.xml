@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+		<record id="view_school_specialty_form" model="ir.ui.view">
+			<field name="name">school.specialty.form</field>
+			<field name="model">school.specialty</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Specialty">
+					<group>
+						<field name="code" />
+						<field name="name" />
+					</group>
+				</form>
+			</field>
+		</record>
+
+		<record id="view_school_specialty_tree" model="ir.ui.view">
+			<field name="name">school.specialty.tree</field>
+			<field name="model">school.specialty</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Specialty">
+					<field name="code" />
+					<field name="name" />
+				</tree>
+			</field>
+		</record>
+
+		<record id="act_school_specialty" model="ir.actions.act_window">
+			<field name="name">Specialty</field>
+			<field name="res_model">school.specialty</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<!--field name="search_view_id" ref="view_school_specialty_search" /-->
+		</record>
+
+
+
+	</data>
+</openerp>

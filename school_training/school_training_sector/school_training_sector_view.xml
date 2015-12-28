@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+		<record id="view_school_training_sector_form" model="ir.ui.view">
+			<field name="name">school.training.sector.form</field>
+			<field name="model">school.training.sector</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Training Sector">
+					<group colspan="4" col="2">
+						<field name="name" />
+					</group>
+				</form>
+			</field>
+		</record>
+
+		<record id="view_school_training_sector_tree" model="ir.ui.view">
+			<field name="name">school.training.sector.tree</field>
+			<field name="model">school.training.sector</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Training Sector">
+					<field name="name" />
+				</tree>
+			</field>
+		</record>
+
+		<record id="act_school_training_sector" model="ir.actions.act_window">
+			<field name="name">Training Sector</field>
+			<field name="res_model">school.training.sector</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<!--field name="search_view_id" ref="view_school_training_sector_search" /-->
+		</record>
+
+	</data>
+</openerp>

@@ -1,0 +1,1 @@
+import school_training_financial_detail

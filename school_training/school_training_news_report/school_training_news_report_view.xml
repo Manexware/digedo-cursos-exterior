@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+		<!--
+			NEWS REPORT
+		-->
+		<record id="view_school_training_news_report_form" model="ir.ui.view">
+			<field name="name">school.training.news.report.form</field>
+			<field name="model">school.training.news.report</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Training News Report">
+					<header>
+						<!--<group attrs="{'invisible':[('is_approver','=',1)]}">-->
+							<!--<button name="release" states="draft" string="Release" type="object" icon="gtk-apply"-->
+								<!--confirm="If you publish can no longer edit the news. Do you want continue?" />-->
+						<!--</group>-->
+						<!--<group attrs="{'invisible':[('is_approver','=',0)]}">-->
+							<!--<button name="revise" states="released" string="Revise" type="object" icon="gtk-ok" />-->
+						<!--</group>-->
+							<div attrs="{'invisible':[('is_approver','=',1)]}" >
+							<button name="release" states="draft" string="Release" type="object" icon="gtk-apply"
+								confirm="If you publish can no longer edit the news. Do you want continue?"/>
+						</div>
+						<div attrs="{'invisible':[('is_approver','=',0)]}">
+						<button name="revise" states="released" string="Revise" type="object" icon="gtk-ok" />
+						</div>
+						<field name="state" widget="statusbar"
+							statusbar_colors='{"draft":"red","released":"blue"}' />
+					</header>
+					<sheet>
+						<group>
+							<field name="created_date" />
+							<field name="training_id" />
+							<newline />
+							<field name="name" colspan="4" />
+							<field name="is_approver" invisible="1" />
+							<field name="student_id" invisible="1"/>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<record id="view_school_training_news_report_tree" model="ir.ui.view">
+			<field name="name">school.training.news.report.tree</field>
+			<field name="model">school.training.news.report</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Training News Report" 
+					colors="gray:state=='draft';blue:state=='released'">
+					<field name="student_id" />
+					<field name="created_date" />
+					<field name="name" />
+					<field name="state" widget="statusbar" />
+				</tree>
+			</field>
+		</record>
+
+		<record id="view_school_training_news_report_search" model="ir.ui.view">
+			<field name="name">school.training.news.report.search</field>
+			<field name="model">school.training.news.report</field>
+			<field name="type">search</field>
+			<field name="arch" type="xml">
+				<search>
+					<group string="Filter by...">
+						<field name="training_id" />
+					</group>
+				</search>
+			</field>
+		</record>
+
+		<record id="act_school_training_news_report" model="ir.actions.act_window">
+			<field name="name">Training News Report View</field>
+			<field name="res_model">school.training.news.report</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="search_view_id" ref="view_school_training_news_report_search" />
+		</record>
+
+
+
+	</data>
+</openerp>

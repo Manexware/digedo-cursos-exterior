@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+		<!--
+			EDUCATIONAL INSTITUTION
+		-->
+		<record id="view_school_educational_institution_form" model="ir.ui.view">
+			<field name="name">school.training.educational.institution.form</field>
+			<field name="model">school.training.educational.institution</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Educational Institution">
+					<group>
+						<field name="code" />
+						<newline />
+						<field name="name" colspan="4" />
+						<newline />
+						<field name="city_id" />
+					</group>
+				</form>
+			</field>
+		</record>
+
+		<record id="view_school_educational_institution_tree" model="ir.ui.view">
+			<field name="name">school.training.educational.institution.tree</field>
+			<field name="model">school.training.educational.institution</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Educational Institution">
+					<field name="code" />
+					<field name="name" />
+					<field name="city_id" />
+				</tree>
+			</field>
+		</record>
+
+		<record id="view_school_educational_institution_search" model="ir.ui.view">
+			<field name="name">school.training.educational.institution.search</field>
+			<field name="model">school.training.educational.institution</field>
+			<field name="type">search</field>
+			<field name="arch" type="xml">
+				<search>
+					<group string="Filter by...">
+						<field name="code" />
+						<field name="name" />
+						<field name="city_id" widget="selection" />
+					</group>
+					<newline />
+					<group expand="0" string="Group by...">
+						<filter string="City" domain="[]" context="{'group_by': 'city_id'}" />
+					</group>
+				</search>
+			</field>
+		</record>
+
+		<record id="act_school_educational_institution" model="ir.actions.act_window">
+			<field name="name">Educational Institution</field>
+			<field name="res_model">school.training.educational.institution</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="search_view_id" ref="view_school_educational_institution_search" />
+		</record>
+
+	</data>
+</openerp>

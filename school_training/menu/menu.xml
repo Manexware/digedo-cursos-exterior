@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+		<menuitem id="menu_school_training_category"
+			parent="school_base.menu_school_config_course"
+			name="Training Categories"
+			action="act_school_training_category" sequence="1" />
+
+		<menuitem id="menu_school_training_sector"
+			parent="school_base.menu_school_config_course"
+			name="Training Sector"
+			action="act_school_training_sector" sequence="2" />
+
+		<menuitem id="menu_school_city"
+			parent="school_base.menu_school_config_course"
+			name="City"
+			action="act_school_city" sequence="5" />
+
+		<menuitem id="menu_school_educational_institution"
+			parent="school_base.menu_school_config_course"
+			name="Educational Institution"
+			action="act_school_educational_institution" sequence="6" />
+
+		<menuitem id="menu_school_training_financial_concept"
+			parent="school_base.menu_school_config_course"
+			name="Training Financial Concepts"
+			action="act_school_training_financial_concept" sequence="4" />
+
+		<menuitem id="menu_school_training"
+			parent="school_base.menu_school_base"
+			name="Training"
+			action="act_school_training" sequence="5" />
+
+		<menuitem id="menu_school_training_news_report"
+			parent="school_base.menu_school_base"
+			name="Training News Report"
+			action="act_school_training_news_report" sequence="5" />
+	</data>
+</openerp>

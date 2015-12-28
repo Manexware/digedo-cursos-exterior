@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+
+    <data noupdate="1"><!-- noupdate="1"-->
+    	<record model="school.training.sector" id="sector_1">
+			<field name="name">Plan Incentivo</field>
+		</record>
+		<record model="school.training.sector" id="sector_2">
+			<field name="name">Capacitaci&#243;n Integral</field>
+		</record>
+    	<record model="school.training.sector" id="sector_3">
+			<field name="name">Desarrollo Mar&#237;timo (DIGEIM-INOCAR)</field>
+		</record>
+		<record model="school.training.sector" id="sector_4">
+			<field name="name">Investigaci&#243;n y Desarrollo (DIGMAT-DINDES)</field>
+		</record>
+    	<record model="school.training.sector" id="sector_5">
+			<field name="name">Marina Mercante (DIGMER-COGUAR)</field>
+		</record>
+		<record model="school.training.sector" id="sector_6">
+			<field name="name">RR. HH. Sanidad (DIRSAN)</field>
+		</record>
+    </data>
+
+</openerp>

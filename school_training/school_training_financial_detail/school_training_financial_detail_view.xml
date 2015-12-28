@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+		<!--
+			FINANCIAL DETAIL
+		-->
+		<record id="view_school_training_financial_detail_form" model="ir.ui.view">
+			<field name="name">school.training.financial.detail.form</field>
+			<field name="model">school.training.financial.detail</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Financial Detail">
+					<field name="concept_id" />
+					<field name="amount" />
+				</form>
+			</field>
+		</record>
+		<record id="view_school_training_financial_detail_tree" model="ir.ui.view">
+			<field name="name">school.training.financial.detail.tree</field>
+			<field name="model">school.training.financial.detail</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Financial Detail">
+					<field name="concept_id" />
+					<field name="amount" />
+				</tree>
+			</field>
+		</record>
+
+
+	</data>
+</openerp>

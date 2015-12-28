@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+		<!--
+			CITY
+		-->
+		<record id="view_school_city_form" model="ir.ui.view">
+			<field name="name">school.training.city.form</field>
+			<field name="model">school.training.city</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="City">
+					<group>
+						<field name="name" colspan="4" />
+						<newline />
+						<field name="state_id" />
+						<field name="country" />
+					</group>
+				</form>
+			</field>
+		</record>
+
+		<record id="view_school_city_tree" model="ir.ui.view">
+			<field name="name">school.training.city.tree</field>
+			<field name="model">school.training.city</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Cities">
+					<field name="name" />
+					<field name="state_id" />
+					<field name="country" />
+				</tree>
+			</field>
+		</record>
+
+		<record id="view_school_city_search" model="ir.ui.view">
+			<field name="name">school.training.city.search</field>
+			<field name="model">school.training.city</field>
+			<field name="type">search</field>
+			<field name="arch" type="xml">
+				<search>
+					<group string="Filter by...">
+						<filter name="ec" string="Ecuador" domain="[('country.code', '=', 'ec')]" />
+						<field name="name" />
+						<field name="state_id" widget="selection" />
+					</group>
+					<newline />
+					<group expand="0" string="Group by...">
+						<filter string="Country" domain="[]" context="{'group_by': 'country'}" />
+						<filter string="State" domain="[]" context="{'group_by': 'state_id'}" />
+					</group>
+				</search>
+			</field>
+		</record>
+
+		<record id="act_school_city" model="ir.actions.act_window">
+			<field name="name">City View</field>
+			<field name="res_model">school.training.city</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="search_view_id" ref="view_school_city_search" />
+		</record>
+
+	</data>
+</openerp>

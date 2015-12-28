@@ -1,0 +1,523 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* school_base
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-06-19 15:07+0000\n"
+"PO-Revision-Date: 2012-06-19 15:07+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:283
+#: sql_constraint:school.topic:0
+#, python-format
+msgid "# Hours must be greater than 0"
+msgstr "# Horas debe ser mayor a 0"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:334
+#: field:school.matter,requirements:0
+#, python-format
+msgid "Requirements"
+msgstr "Requisitos"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:141
+#: selection:hr.employee,status:0
+#, python-format
+msgid "Active in Force"
+msgstr "Activo en la Fuerza"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:310
+#: field:school.teaching.unit,objective:0
+#, python-format
+msgid "Objetive"
+msgstr "Objetivo Terminal"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:135
+#: field:hr.employee,title:0
+#, python-format
+msgid "Title"
+msgstr "Título"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:330
+#: model:ir.model,name:school_base.model_school_formation_shaft
+#: field:school.matter,formation_id:0
+#, python-format
+msgid "Formation Shaft"
+msgstr "Eje de Formación"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:147
+#: field:hr.employee,admission_date:0
+#, python-format
+msgid "Admission Date"
+msgstr "Fecha de Ingreso a la Armada"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:136
+#: field:hr.employee,last_name:0
+#, python-format
+msgid "Last Name"
+msgstr "Apellidos"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:70
+#: code:addons/school_base/school_base.py:209
+#: code:addons/school_base/school_base.py:230
+#: code:addons/school_base/school_base.py:346
+#: sql_constraint:school.batch:0
+#: sql_constraint:school.formation.shaft:0
+#: sql_constraint:school.matter:0
+#: sql_constraint:school.specialty:0
+#, python-format
+msgid "Name must be unique"
+msgstr "Nombre debe ser único"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:35
+#: code:addons/school_base/school_base.py:69
+#: code:addons/school_base/school_base.py:345
+#: sql_constraint:school.grade:0
+#: sql_constraint:school.matter:0
+#: sql_constraint:school.specialty:0
+#, python-format
+msgid "Code must be unique"
+msgstr "Código debe ser único"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:139
+#: help:hr.employee,suffix:0
+#, python-format
+msgid "Masters degree, PhD"
+msgstr "Masterado, Doctorado"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:151
+#: field:hr.employee,hair_color:0
+#, python-format
+msgid "Hair Color"
+msgstr "Color de Cabello"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:336
+#: field:school.matter,conceptual_approach:0
+#, python-format
+msgid "Conceptual Approach"
+msgstr "Enfoque Conceptual"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:246
+#: field:school.evaluation.parameter,factor:0
+#, python-format
+msgid "Factor"
+msgstr "Factor"
+
+#. module: school_base
+#: model:ir.model,name:school_base.model_hr_employee
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:154
+#: field:hr.employee,shoe_size:0
+#, python-format
+msgid "Shoe Size"
+msgstr "Talla Zapato"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:143
+#: selection:hr.employee,status:0
+#, python-format
+msgid "Public Functionary"
+msgstr "Funcionario Público"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:149
+#: field:hr.employee,height:0
+#, python-format
+msgid "Height"
+msgstr "Estatura"
+
+#. module: school_base
+#: view:hr.employee:0
+msgid "Other"
+msgstr "Tallas"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:26
+#: code:addons/school_base/school_base.py:65
+#: code:addons/school_base/school_base.py:203
+#: code:addons/school_base/school_base.py:224
+#: code:addons/school_base/school_base.py:245
+#: code:addons/school_base/school_base.py:277
+#: code:addons/school_base/school_base.py:309
+#: code:addons/school_base/school_base.py:328
+#: field:hr.employee,full_name:0
+#: field:school.batch,name:0
+#: field:school.evaluation.parameter,name:0
+#: field:school.formation.shaft,name:0
+#: field:school.grade,name:0
+#: field:school.matter,name:0
+#: field:school.specialty,name:0
+#: field:school.teaching.unit,name:0
+#: field:school.topic,name:0
+#, python-format
+msgid "Name"
+msgstr "Nombre"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:144
+#: field:hr.employee,status:0
+#, python-format
+msgid "Status"
+msgstr "Tipo"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:27
+#: field:school.grade,is_official:0
+#, python-format
+msgid "Is official"
+msgstr "Es oficial"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:146
+#: field:hr.employee,blood_type:0
+#, python-format
+msgid "Blood Type"
+msgstr "Tipo de Sangre"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:142
+#: selection:hr.employee,status:0
+#, python-format
+msgid "Passive in Force"
+msgstr "Pasivo en la Fuerza"
+
+#. module: school_base
+#: model:ir.ui.menu,name:school_base.menu_school_config_matter
+msgid "Matters"
+msgstr "Materias"
+
+#. module: school_base
+#: model:ir.ui.menu,name:school_base.menu_school_config_student
+msgid "Students"
+msgstr "Alumnos"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:276
+#: code:addons/school_base/school_base.py:308
+#: field:school.teaching.unit,sequence:0
+#: field:school.topic,sequence:0
+#, python-format
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:138
+#: view:hr.employee:0
+#: field:hr.employee,specialty_id:0
+#: model:ir.actions.act_window,name:school_base.act_school_specialty
+#: model:ir.model,name:school_base.model_school_specialty
+#: model:ir.ui.menu,name:school_base.menu_school_specialty
+#: view:school.specialty:0
+#, python-format
+msgid "Specialty"
+msgstr "Especialidad"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:153
+#: field:hr.employee,pants_size:0
+#, python-format
+msgid "Pants Size"
+msgstr "Talla Pantalón"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:331
+#: field:school.matter,credits:0
+#, python-format
+msgid "Credits"
+msgstr "Créditos"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:335
+#: field:school.matter,specific_objetives:0
+#, python-format
+msgid "Specific Objetives"
+msgstr "Objetivos Específicos"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:247
+#: code:addons/school_base/school_base.py:313
+#: model:ir.model,name:school_base.model_school_matter
+#: field:school.evaluation.parameter,matter_id:0
+#: field:school.teaching.unit,matter_id:0
+#, python-format
+msgid "Matter"
+msgstr "Materia"
+
+#. module: school_base
+#: model:ir.ui.menu,name:school_base.menu_school_config
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: school_base
+#: constraint:hr.employee:0
+msgid "Error ! You cannot create recursive Hierarchy of Employees."
+msgstr "¡Error! No se puede crear una jerarquía recursiva de empleados."
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:149
+#: help:hr.employee,height:0
+#, python-format
+msgid "In meters"
+msgstr "En metros"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:347
+#: sql_constraint:school.matter:0
+#, python-format
+msgid "Credits must be greater than 0"
+msgstr "Créditos debe ser mayor a 0"
+
+#. module: school_base
+#: model:ir.ui.menu,name:school_base.menu_school
+#: model:ir.ui.menu,name:school_base.menu_school_base
+msgid "School"
+msgstr "Escuela"
+
+#. module: school_base
+#: selection:hr.employee,blood_type:0
+msgid "O Rh+"
+msgstr "O Rh+"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:27
+#: help:school.grade,is_official:0
+#, python-format
+msgid "Indicates if the marine is official"
+msgstr "Indica si es oficial"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:139
+#: field:hr.employee,suffix:0
+#, python-format
+msgid "Suffix"
+msgstr "Sufijo"
+
+#. module: school_base
+#: model:ir.actions.act_window,name:school_base.act_school_employee
+#: model:ir.ui.menu,name:school_base.menu_act_school_employee
+msgid "Employees"
+msgstr "Empleados"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:163
+#: sql_constraint:hr.employee:0
+#, python-format
+msgid "ID must be unique"
+msgstr "ID debe ser único"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:332
+#: model:ir.model,name:school_base.model_school_batch
+#: field:school.matter,batch_id:0
+#, python-format
+msgid "Batch"
+msgstr "Módulo"
+
+#. module: school_base
+#: selection:hr.employee,blood_type:0
+msgid "O Rh-"
+msgstr "O Rh-"
+
+#. module: school_base
+#: model:ir.ui.menu,name:school_base.menu_school_config_course
+msgid "Courses"
+msgstr "Cursos"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:25
+#: code:addons/school_base/school_base.py:64
+#: code:addons/school_base/school_base.py:329
+#: field:school.grade,code:0
+#: field:school.matter,code:0
+#: field:school.specialty,code:0
+#, python-format
+msgid "Code"
+msgstr "Código"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:186
+#: constraint:hr.employee:0
+#, python-format
+msgid "ID is not valid"
+msgstr "ID no es válido"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:333
+#: field:school.matter,param_ids:0
+#, python-format
+msgid "Evaluation Parameters"
+msgstr "Parámetros de Evaluación"
+
+#. module: school_base
+#: model:ir.model,name:school_base.model_school_topic
+msgid "Topic"
+msgstr "Tópico"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:148
+#: field:hr.employee,last_ascent_date:0
+#, python-format
+msgid "Last Ascent Date"
+msgstr "Última Fecha de Ascenso"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:147
+#: code:addons/school_base/school_base.py:148
+#: help:hr.employee,admission_date:0
+#: help:hr.employee,last_ascent_date:0
+#, python-format
+msgid "(mm/dd/yyyy)"
+msgstr "(Mes/Día/Año)"
+
+#. module: school_base
+#: view:hr.employee:0
+msgid "Features"
+msgstr "Rasgos"
+
+#. module: school_base
+#: selection:hr.employee,blood_type:0
+msgid "AB Rh-"
+msgstr "AB Rh-"
+
+#. module: school_base
+#: selection:hr.employee,blood_type:0
+msgid "A Rh-"
+msgstr "A Rh-"
+
+#. module: school_base
+#: selection:hr.employee,blood_type:0
+msgid "A Rh+"
+msgstr "A Rh+"
+
+#. module: school_base
+#: selection:hr.employee,blood_type:0
+msgid "AB Rh+"
+msgstr "AB Rh+"
+
+#. module: school_base
+#: view:hr.employee:0
+msgid "Group By..."
+msgstr "Agrupar por..."
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:137
+#: view:hr.employee:0
+#: field:hr.employee,grade_id:0
+#: model:ir.actions.act_window,name:school_base.act_school_grade
+#: model:ir.model,name:school_base.model_school_grade
+#: model:ir.ui.menu,name:school_base.menu_school_grade
+#: view:school.grade:0
+#, python-format
+msgid "Grade"
+msgstr "Grado"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:311
+#: field:school.teaching.unit,topic_ids:0
+#, python-format
+msgid "Topics"
+msgstr "Tópicos"
+
+#. module: school_base
+#: view:hr.employee:0
+msgid "Military Information"
+msgstr "Información Militar"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:337
+#: field:school.matter,teaching_unit_ids:0
+#, python-format
+msgid "Teaching Units"
+msgstr "Unidades de Enseñanza"
+
+#. module: school_base
+#: model:ir.model,name:school_base.model_school_evaluation_parameter
+msgid "Evaluation Parameter"
+msgstr "Parámetro de Evaluación"
+
+#. module: school_base
+#: selection:hr.employee,blood_type:0
+msgid "B Rh-"
+msgstr "B Rh-"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:278
+#: code:addons/school_base/school_base.py:312
+#: field:school.teaching.unit,no_hours:0
+#: field:school.topic,no_hours:0
+#, python-format
+msgid "# Hours"
+msgstr "# Horas"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:152
+#: field:hr.employee,shirt_size:0
+#, python-format
+msgid "Shirt Size"
+msgstr "Talla Camisa"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:150
+#: field:hr.employee,eye_color:0
+#, python-format
+msgid "Eye Color"
+msgstr "Color de Ojos"
+
+#. module: school_base
+#: selection:hr.employee,blood_type:0
+msgid "B Rh+"
+msgstr "B Rh+"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:261
+#: constraint:school.evaluation.parameter:0
+#, python-format
+msgid "Factor must be between 0 and 1"
+msgstr "Factor debe ser entre 0 y 1"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:362
+#: constraint:school.matter:0
+#, python-format
+msgid "Sum of factors must be 1"
+msgstr "El total de la suma de factores debe ser 1"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:155
+#: field:hr.employee,cap_size:0
+#, python-format
+msgid "Cap Size"
+msgstr "Talla Gorra"
+
+#. module: school_base
+#: code:addons/school_base/school_base.py:279
+#: model:ir.model,name:school_base.model_school_teaching_unit
+#: field:school.topic,teaching_unit_id:0
+#, python-format
+msgid "Teaching Unit"
+msgstr "Unidad de Enseñanza"
+

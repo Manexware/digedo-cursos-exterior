@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+		<record id="view_school_training_financial_concept_form" model="ir.ui.view">
+			<field name="name">school.training.financial.concept.form</field>
+			<field name="model">school.training.financial.concept</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Training Financial Concept">
+					<group colspan="4" col="2">
+						<field name="name" />
+						<field name="property_account_expense" />
+					</group>
+				</form>
+			</field>
+		</record>
+
+		<record id="view_school_training_financial_concept_tree" model="ir.ui.view">
+			<field name="name">school.training.financial.concept.tree</field>
+			<field name="model">school.training.financial.concept</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Training Financial Concepts">
+					<field name="name" />
+				</tree>
+			</field>
+		</record>
+
+		<record id="act_school_training_financial_concept" model="ir.actions.act_window">
+			<field name="name">Training Financial Concepts</field>
+			<field name="res_model">school.training.financial.concept</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<!--field name="search_view_id" ref="view_school_training_financial_concept_search" /-->
+		</record>
+
+
+	</data>
+</openerp>

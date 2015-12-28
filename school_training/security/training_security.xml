@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1"><!---->
+
+        <record id="module_category_school" model="ir.module.category">
+            <field name="name">School</field>
+            <field name="description">Defined roles for actors of school</field>
+            <field name="sequence">31</field>
+        </record>
+
+        <record id="school_training.administrator" model="res.groups">
+            <field name="name">Training Manager</field>
+            <field name="category_id" ref="module_category_school"/>
+        </record>
+
+        <record id="school_training.student" model="res.groups">
+            <field name="name">Training Student</field>
+            <field name="category_id" ref="module_category_school"/>
+        </record>
+
+        <record id="school_training.guest" model="res.groups">
+            <field name="name">Training Guest</field>
+            <field name="category_id" ref="module_category_school"/>
+        </record>
+    
+    </data>
+</openerp>
