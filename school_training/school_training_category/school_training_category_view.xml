@@ -9,7 +9,7 @@
 			<field name="arch" type="xml">
 				<form string="Training Category">
 					<group colspan="4" col="2">
-						<field name="name" />
+						<field name="name"/>
 					</group>
 				</form>
 			</field>
