@@ -119,3 +119,46 @@ class SchoolTraining(models.Model):
     @api.one
     def executed(self):
         self.state = 'executed'
+
+    @api.model
+    def search(self, args, offset=0, limit=None, order=None, count=False):
+        if self._uid == 1:
+            return super(SchoolTraining, self).search(args, offset=offset, limit=limit, order=order, count=count)
+        # self.env.cr.execute("""SELECT 1
+        #     FROM res_groups_users_rel gu JOIN res_groups g ON g.id = gu.gid
+        #     WHERE uid = %s AND name ~ 'Training Manager'""" % (self._uid))
+        # flag = self.env.cr.fetchone()
+        # if not flag:
+        #     self.env.cr.execute("""SELECT n.id
+        #         FROM school_training_employee_rel t
+        #         JOIN hr_employee e ON e.id = t.student_id
+        #         JOIN resource_resource r ON r.id = e.resource_id
+        #         JOIN school_training n ON n.id = t.training_id
+        #         WHERE user_id = %s""" % (self._uid))
+        #     result = self.env.cr.fetchall()
+        #     ids = set()
+        #     for r in result:
+        #         ids.add(r[0])
+        #     domain.append(('id','in',list(ids)))
+        return super(SchoolTraining, self).search(args, offset, limit, order, context=self._context, count=False)
+
+    # def search(self, cr, uid, domain, offset=0, limit=None, order=None, context=None, count=False):
+        # if uid == 1:
+        # 	return super(school_training, self).search(cr, uid, domain, offset=offset, limit=limit, order=order, context=context, count=count)
+        # cr.execute("""SELECT 1
+        #     FROM res_groups_users_rel gu JOIN res_groups g ON g.id = gu.gid
+        #     WHERE uid = %s AND name ~ 'Training Manager'"""%(uid))
+        # flag = cr.fetchone()
+        # if not flag:
+        # 	cr.execute("""SELECT n.id
+        # 		FROM school_training_employee_rel t
+        # 		JOIN hr_employee e ON e.id = t.student_id
+        # 		JOIN resource_resource r ON r.id = e.resource_id
+        # 		JOIN school_training n ON n.id = t.training_id
+        # 		WHERE user_id = %s"""%(uid))
+        # 	result = cr.fetchall()
+        # 	ids = set()
+        # 	for r in result:
+        # 		ids.add(r[0])
+        # 	domain.append(('id','in',list(ids)))
+        # return super(school_training, self).search(cr, uid, domain, offset, limit, order, context, count)
