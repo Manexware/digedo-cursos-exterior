@@ -1,7 +1,6 @@
 from openerp import _, models, fields
-#----------------------------------------------------------
-# 05.- Financial Concept
-#----------------------------------------------------------
+
+
 class SchoolTrainingFinancialConcept(models.Model):
     """Financial Concept"""
 

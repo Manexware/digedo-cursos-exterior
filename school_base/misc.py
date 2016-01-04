@@ -1,8 +1,5 @@
-import subprocess
-import re
 import logging
 
-from openerp import _
 
 _logger = logging.getLogger(__name__)
 

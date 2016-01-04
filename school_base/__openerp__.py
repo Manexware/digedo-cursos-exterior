@@ -8,7 +8,7 @@ Module Basic for School Digedo
     """,
     'author': 'Manexware SA',
     'website': 'http://www.manexware.com',
-    'images' : [
+    'images': [
         'images/school.png', 
         'images/school_hover.png',
     ],

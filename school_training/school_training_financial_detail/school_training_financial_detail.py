@@ -1,11 +1,8 @@
-from openerp import _, models, fields,api
+from openerp import _, models, fields, api
 
-#----------------------------------------------------------
-# 06.- Training Financial Detail
-#----------------------------------------------------------
+
 class SchoolTrainingFinancialDetail(models.Model):
     """Training Financial Detail"""
-
 
     # def name_get(self, cr, uid, ids, context=None):
     #     if not ids:
@@ -29,9 +26,8 @@ class SchoolTrainingFinancialDetail(models.Model):
     _description = 'Training Financial Detail'
 
     concept_id = fields.Many2one('school.training.financial.concept', _('Concept'), required=True)
-    amount = fields.Float(_('Amount'), digits=(9,2))
+    amount = fields.Float(_('Amount'), digits=(9, 2))
     training_id = fields.Many2one('school.training', _('Training'))
-
 
     _sql_constraints = [
         ('concept_unq', 'unique(training_id, concept_id)', _('Concept must be unique'))

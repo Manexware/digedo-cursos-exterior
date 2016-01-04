@@ -1,5 +1,6 @@
 from openerp import _, models, fields
 
+
 class SchoolTrainingCategory(models.Model):
     """Training Category"""
 
