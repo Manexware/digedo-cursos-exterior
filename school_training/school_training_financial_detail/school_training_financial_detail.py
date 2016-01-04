@@ -3,7 +3,7 @@ from openerp import _, models, fields,api
 #----------------------------------------------------------
 # 06.- Training Financial Detail
 #----------------------------------------------------------
-class school_training_financial_detail(models.Model):
+class SchoolTrainingFinancialDetail(models.Model):
     """Training Financial Detail"""
 
 

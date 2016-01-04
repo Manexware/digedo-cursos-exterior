@@ -1,9 +1,7 @@
 from openerp import _, models, fields
 
-#----------------------------------------------------------
-# 02.- Training Sector
-#----------------------------------------------------------
-class school_training_sector(models.Model):
+
+class SchoolTrainingSector(models.Model):
     """Training Sector"""
 
     _name = 'school.training.sector'

@@ -6,7 +6,7 @@ from openerp.exceptions import ValidationError, Warning
 #----------------------------------------------------------
 # 07.- Training
 #----------------------------------------------------------
-class school_training(models.Model):
+class SchoolTraining(models.Model):
     """Training"""
 
     _name = 'school.training'

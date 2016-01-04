@@ -3,7 +3,7 @@ from openerp import _, models, fields,api
 #----------------------------------------------------------
 # 02.- Specialty
 #----------------------------------------------------------
-class school_specialty(models.Model):
+class SchoolSpecialty(models.Model):
     """Specialty"""
 
     _name = 'school.specialty'

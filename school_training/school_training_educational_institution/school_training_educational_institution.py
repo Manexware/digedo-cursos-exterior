@@ -3,7 +3,7 @@ from openerp import _, models, fields
 #----------------------------------------------------------
 # 04.- Educational Institution
 #----------------------------------------------------------
-class school_training_educational_institution(models.Model):
+class SchoolTrainingEducationalInstitution(models.Model):
     """Educational Institution"""
 
     _name = 'school.training.educational.institution'

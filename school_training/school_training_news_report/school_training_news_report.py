@@ -1,7 +1,7 @@
 from openerp import _, models, fields, api
-from ..misc import MODALITY,TRAINING_STATES
-from dateutil.relativedelta import relativedelta
-from openerp.exceptions import ValidationError, Warning
+# from ..misc import MODALITY,TRAINING_STATES
+# from dateutil.relativedelta import relativedelta
+# from openerp.exceptions import ValidationError, Warning
 import time
 
 
