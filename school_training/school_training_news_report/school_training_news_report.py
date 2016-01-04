@@ -1,11 +1,11 @@
-from openerp import _, models, fields,api
+from openerp import _, models, fields, api
 from ..misc import MODALITY,TRAINING_STATES
 from dateutil.relativedelta import relativedelta
 from openerp.exceptions import ValidationError, Warning
 import time
 
 
-class school_training_news_report(models.Model):
+class SchoolTrainingNewsReport(models.Model):
     """News Report"""
 
     _name = 'school.training.news.report'
@@ -24,35 +24,33 @@ class school_training_news_report(models.Model):
     @api.one
     def _is_approver(self):
         users = []
-        # users = self.env['res.groups'].search([('id','=',self.env.ref('school_training.administrator')[0].id),('users','=',self._uid)])
+        # users = self.env['res.groups'].search([('id','=',self.env.ref('school_training.administrator')[0].id),
+        # ('users','=',self._uid)])
         self.is_approver = False
         if users:
             self.is_approver = True
 
-
     def _get_student(self):
         if not self.student_id:
-            student_id =self.env['hr.employee'].search([('user_id', '=', self._uid)])
+            student_id = self.env['hr.employee'].search([('user_id', '=', self._uid)])
             return student_id.id
 
-    name = fields.Text(_('Notes'), required=True, readonly=True,
-        states={'draft':[('readonly',False)]})
-    created_date = fields.Datetime(_('Novelty Date'), readonly=True, default = time.strftime('%Y-%m-%d %H:%M:%S'))
-    student_id = fields.Many2one('hr.employee', _('Student'),default=_get_student, ondelete='restrict', readonly=True,store=True)
+    name = fields.Text(_('Notes'), required=True, readonly=True, states={'draft': [('readonly', False)]})
+    created_date = fields.Datetime(_('Novelty Date'), readonly=True, default=time.strftime('%Y-%m-%d %H:%M:%S'))
+    student_id = fields.Many2one('hr.employee', _('Student'), default=_get_student, ondelete='restrict', readonly=True,
+                                 store=True)
     training_id = fields.Many2one('school.training', string=_('Training'), ondelete='restrict', required=True)
-    state = fields.Selection(
-        [
+    state = fields.Selection([
         ('draft', 'Draft'),
         ('released', 'Released'),
         ('revised', 'Revised')
-        ], _('State'), default = 'draft')
+        ], _('State'), default='draft')
     is_approver = fields.Integer(compute='_is_approver', string=_('Is Approver'))
-
-
 
     # def search(self, cr, uid, domain, offset=0, limit=None, order=None, context=None, count=False):
     #     if uid == 1:
-    #         return super(school_training_news_report, self).search(cr, uid, domain, offset=offset, limit=limit, order=order, context=context, count=count)
+    #         return super(school_training_news_report, self).
+    # search(cr, uid, domain, offset=offset, limit=limit, order=order, context=context, count=count)
     #     cr.execute("""SELECT 1
     #         FROM res_groups_users_rel gu JOIN res_groups g ON g.id = gu.gid
     #         WHERE uid = %s AND name ~ 'Training Manager'"""%(uid))

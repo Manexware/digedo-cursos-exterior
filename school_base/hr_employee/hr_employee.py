@@ -1,9 +1,11 @@
-from openerp import _, models, fields,api
+# -*- coding: utf-8 -*-
+
+from openerp import _, models, fields, api
 from ..misc import BLOOD_TYPE
 from openerp.exceptions import ValidationError
 
 
-class school_person(models.Model):
+class SchoolPerson(models.Model):
     """Person"""
 
     @api.multi
@@ -11,7 +13,7 @@ class school_person(models.Model):
     def name_get(self):
         res = []
         for record in self:
-            name=record.name
+            name = record.name
             if record.last_name:
                 name = name + ' ' + record.last_name
             if record.status:
@@ -20,7 +22,7 @@ class school_person(models.Model):
                         name = record.title + ' ' + name
                     if record.suffix:
                         name = name + ', ' + record.suffix
-                elif (record.status == 'active' or record.status == 'passive'):
+                elif record.status == 'active' or record.status == 'passive':
                     if record.grade_id:
                         if record.status == 'passive':
                             name = record.grade_id.code + '(SP) ' + name
@@ -35,8 +37,7 @@ class school_person(models.Model):
                         name = name + ', ' + record.title
             res.append((record.id, name))
         return res
-    
-    
+
     # @api.multi
     # @api.depends('name', 'last_name', 'grade_id', 'specialty_id', 'title', 'suffix', 'status')
     # def name_get(self):
@@ -77,7 +78,6 @@ class school_person(models.Model):
 
     _inherit = 'hr.employee'
 
-
     title = fields.Char(_('Title'), size=16)
     last_name = fields.Char(_('Last Name'), size=32)
     grade_id = fields.Many2one('school.grade', _('Grade'))
@@ -87,9 +87,9 @@ class school_person(models.Model):
             ('active', _('Active in Force')),
             ('passive', _('Passive in Force')),
             ('functionary', _('Public Functionary'))
-        ], _('Status'),default = 'active')
+        ], _('Status'), default='active')
     full_name = fields.Char(compute='_name_get_fnc', string='Name')
-    #full_name = fields.Char(string='Name',store=True)
+    # full_name = fields.Char(string='Name',store=True)
     blood_type = fields.Selection(BLOOD_TYPE, _('Blood Type'))
     admission_date = fields.Date(_('Admission Date'), help=_('(mm/dd/yyyy)'))
     last_ascent_date = fields.Date(_('Last Ascent Date'), help=_('(mm/dd/yyyy)'))
@@ -101,30 +101,28 @@ class school_person(models.Model):
     shoe_size = fields.Integer(_('Shoe Size'))
     cap_size = fields.Integer(_('Cap Size'))
 
-
     _sql_constraints = [
         ('id_unq', 'unique(identification_id)', _('ID must be unique'))
     ]
 
-    @api.multi
+    @api.one
     @api.constrains('identification_id')
     def _check_id(self):
-        for s in self:
-            if len(s.identification_id) != 10 or not s.identification_id.isdigit():
+        if self.identification_id:
+            if len(self.identification_id) != 10 or not self.identification_id.isdigit():
                 raise ValidationError("ID is not valid")
             accum = 0
             for i in range(9):
-                d = int(s.identification_id[i])
-                if ((i % 2) == 0):
+                d = int(self.identification_id[i])
+                if (i % 2) == 0:
                     accum += (d * 2) > 9 and (d * 2) - 9 or (d * 2)
                 else:
                     accum += d
-            last = int(s.identification_id[9])
+            last = int(self.identification_id[9])
             residue = (accum % 10)
             digit = residue > 0 and 10 - residue or 0
             if not digit == last:
                 raise ValidationError("ID is not valid")
-
 
     # _constraints = [
     #     (_check_id, _('ID is not valid'), ['identification_id'])
@@ -135,13 +133,12 @@ class school_person(models.Model):
     @api.model
     def name_search(self, name, args=None, operator='ilike', limit=100):
         args = args or []
-        ids = False
         name_array = name.split(' ')
         if len(name_array) == 1:
-            args += ['|',('name','ilike',name),('last_name','ilike',name)]
+            args += ['|', ('name', operator, name), ('last_name', operator, name)]
         if len(name_array) == 2:
-            args += [('name','ilike',name_array[0]),('last_name','ilike',name_array[1])]
+            args += [('name', operator, name_array[0]), ('last_name', operator, name_array[1])]
         if len(name_array) == 3:
-            args += [('name','ilike',name_array[0]),('last_name','ilike',name_array[1]+' '+name_array[2])]
-        ids = self.search( args, limit=limit)
+            args += [('name', operator, name_array[0]), ('last_name', operator, name_array[1]+' '+name_array[2])]
+        ids = self.search(args, limit=limit)
         return ids.name_get()
