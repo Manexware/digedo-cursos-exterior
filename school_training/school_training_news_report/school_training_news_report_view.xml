@@ -19,13 +19,13 @@
 						<!--<group attrs="{'invisible':[('is_approver','=',0)]}">-->
 							<!--<button name="revise" states="released" string="Revise" type="object" icon="gtk-ok" />-->
 						<!--</group>-->
-							<div attrs="{'invisible':[('is_approver','=',1)]}" >
+						<span attrs="{'invisible':[('is_approver','=',1)]}" >
 							<button name="release" states="draft" string="Release" type="object" icon="gtk-apply"
 								confirm="If you publish can no longer edit the news. Do you want continue?"/>
-						</div>
-						<div attrs="{'invisible':[('is_approver','=',0)]}">
+						</span>
+						<span attrs="{'invisible':[('is_approver','=',0)]}">
 						<button name="revise" states="released" string="Revise" type="object" icon="gtk-ok" />
-						</div>
+						</span>
 						<field name="state" widget="statusbar"
 							statusbar_colors='{"draft":"red","released":"blue"}' />
 					</header>

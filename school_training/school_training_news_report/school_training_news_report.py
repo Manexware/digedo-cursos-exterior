@@ -23,9 +23,9 @@ class SchoolTrainingNewsReport(models.Model):
 
     @api.one
     def _is_approver(self):
-        users = []
-        # users = self.env['res.groups'].search([('id','=',self.env.ref('school_training.administrator')[0].id),
-        # ('users','=',self._uid)])
+        # users = []
+        users = self.env['res.groups'].search([('id', '=', self.env.ref('school_training.administrator')[0].id),
+                                               ('users', '=', self._uid)])
         self.is_approver = False
         if users:
             self.is_approver = True
