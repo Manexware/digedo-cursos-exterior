@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<!--
+			DOCUMENT VALUATION
+		-->
+		<record id="view_hr_training_document_valuation_form" model="ir.ui.view">
+			<field name="name">hr.training.document.valuation.form</field>
+			<field name="model">hr.training.document.valuation</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Document Valuation">
+					<field name="trade_no" />
+					<field name="application_date" />
+					<field name="applicant_id" colspan="4" />
+					<field name="allocation" colspan="4" />
+					<field name="type_id" on_change="onchange_type(type_id)" />
+					<field name="valoration_id" />
+					<field name="school_id" colspan="4" />
+					<field name="title" colspan="4" />
+					<field name="historic_score" />
+					<field name="score" />
+					<field name="approved_date" attrs="{'invisible':[('state','!=','approved')]}" />
+					<notebook colspan="4">
+						<page string="For Print">
+							<group col="6">
+								<field name="director_id" colspan="6" on_change="onchange_director(director_id)" />
+								<field name="director_fname" />
+								<field name="director_lname1" />
+								<field name="director_lname2" />
+								<field name="annex" colspan="2" />
+								<newline />
+								<field name="signature" colspan="2" />
+							</group>
+						</page>
+					</notebook>
+					<group colspan="4">
+						<field name="state" widget="statusbar" statusbar_visible="draft,accepted,approved"
+							statusbar_colors='{"draft":"gray","rejected":"red","accepted":"blue"}' />
+						<group groups="hr_skills.digitizer">
+							<button name="accept" states="draft" string="Accept" type="object" icon="gtk-apply"
+								confirm="If you accept can no longer edit the permission. Do you want continue?" />
+							<button name="reject" states="draft" string="Reject" type="object" icon="gtk-cancel"
+								confirm="If you reject can no longer edit the permission. Do you want continue?" />
+							<button name="approve" states="accepted" string="Approve" type="object" icon="gtk-ok"
+								confirm="If you approve can no longer edit the permission. Do you want continue?" />
+						</group>
+					</group>
+					<group groups="hr_base.digitizer" colspan="4">
+						<button name="print_valuation" string="Print" type="object" icon="gtk-print" />
+						<!--button name="print_registration" string="Print" type="object" icon="gtk-print" /-->
+					</group>
+				</form>
+			</field>
+		</record>
+		<record id="view_hr_training_document_valuation_tree" model="ir.ui.view">
+			<field name="name">hr.training.document.valuation.tree</field>
+			<field name="model">hr.training.document.valuation</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Document Valuation"
+					colors="gray:state=='draft';red:state=='rejected';blue:state=='accepted'">
+					<field name="trade_no" />
+					<field name="application_date" />
+					<field name="applicant_id" />
+					<field name="school_id" />
+					<field name="type_id" />
+					<field name="valoration_id" />
+					<field name="score" />
+					<field name="state" />
+				</tree>
+			</field>
+		</record>
+		<record id="view_hr_training_document_valuation_search" model="ir.ui.view">
+			<field name="name">hr.training.document.valuation.search</field>
+			<field name="model">hr.training.document.valuation</field>
+			<field name="type">search</field>
+			<field name="arch" type="xml">
+				<search>
+					<group string="Filter by...">
+						<filter name="draft" string="Draft" domain="[('state','=','draft')]" />
+						<filter name="accepted" string="Accepted" domain="[('state','=','accepted')]" />
+						<filter name="rejected" string="Rejected" domain="[('state','=','reject')]" />
+						<filter name="approved" string="Approved" domain="[('state','=','approved')]" />
+						<field name="trade_no" />
+						<field name="school_id" />
+						<field name="applicant_id" />
+						<field name="type_id" />
+						<field name="valoration_id" />
+					</group>
+					<newline />
+					<group expand="0" string="Group by...">
+						<filter string="Type" domain="[]" context="{'group_by': 'type_id'}" />
+						<filter string="School" domain="[]" context="{'group_by': 'school_id'}" />
+						<filter string="Valoration" domain="[]" context="{'group_by': 'valoration_id'}" />
+						<filter string="State" domain="[]" context="{'group_by': 'state'}" />
+					</group>
+				</search>
+			</field>
+		</record>
+		<record id="act_hr_training_document_valuation" model="ir.actions.act_window">
+			<field name="name">Document Valuation</field>
+			<field name="res_model">hr.training.document.valuation</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="search_view_id" ref="view_hr_training_document_valuation_search" />
+		</record>
+
+	</data>
+</openerp>

@@ -17,13 +17,15 @@ Los títulos Académicos, son los que se obtienen en Cursos de Especialización 
     'init_xml': [
     ],
     'data': [
-        'hr_training_type/hr_training_type_view.xml'
+        'hr_training_type/hr_training_type_view.xml',
+        'hr_training_valoration/hr_training_valoration_view.xml',
         #'security/ir.model.access.csv',
         #'report/report.xml',
         #'views/valoration_view.xml',
         #'views/doc_valuation_view.xml',
         #'views/doc_registration_view.xml',
         #'data/demo.xml',
+        'menu/menu.xml',
     ],
     'installable': True,
     'application': False,

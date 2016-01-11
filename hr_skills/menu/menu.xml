@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+		<menuitem id="menu_hr_training_valoration"
+			parent="hr.menu_human_resources_configuration"
+			sequence="2"
+			groups="base.group_hr_manager"
+			action="act_hr_training_valoration" />
+
+
+		<menuitem id="menu_hr_training_document_valuation"
+			parent="hr.menu_hr_main"
+			sequence="7"
+			action="act_hr_training_document_valuation" />
+
+	</data>
+</openerp>
