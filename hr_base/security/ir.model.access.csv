@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_base_school_digitizer,hr.base.school digitizer,model_hr_base_school,hr_base.digitizer,1,0,0,0
+access_hr_base_school_manager,hr.base.school manager,model_hr_base_school,hr_base.manager,1,1,1,1
+access_hr_base_school_employee,hr.base.school employee,model_hr_base_school,base.group_user,1,0,0,0

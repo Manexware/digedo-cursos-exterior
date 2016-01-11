@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1"><!-- noupdate="1"-->
+        <record model="hr.training.type" id="type_1">
+            <field name="name">POR CURSOS DE INTER&#201;S PERSONAL</field>
+        </record>
+        <record model="hr.training.valoration" id="val_1">
+            <field name="name">60-80 HORAS</field>
+            <field name="score">0.01</field>
+            <field name="type_id" ref="type_1" />
+        </record>
+        <record model="hr.training.valoration" id="val_2">
+            <field name="name">81-120 HORAS</field>
+            <field name="score">0.02</field>
+            <field name="type_id" ref="type_1" />
+        </record>
+        <record model="hr.training.valoration" id="val_3">
+            <field name="name">121 HORAS O M&#193;S</field>
+            <field name="score">0.04</field>
+            <field name="type_id" ref="type_1" />
+        </record>
+        <!--
+        -->
+        <record model="hr.training.type" id="type_2">
+            <field name="name">POR T&#205;TULOS ACAD&#201;MICOS</field>
+        </record>
+        <record model="hr.training.valoration" id="val_4">
+            <field name="name">P.H.D., o DOCTORADO</field>
+            <field name="score">0.20</field>
+            <field name="note">TIEMPO M&#205;NIMO DE ESTUDIOS: 24 MESES</field>
+            <field name="type_id" ref="type_2" />
+        </record>
+        <record model="hr.training.valoration" id="val_5">
+            <field name="name">MAESTR&#205;A O DIPLOMADO</field>
+            <field name="score">0.18</field>
+            <field name="note">TIEMPO M&#205;NIMO DE ESTUDIOS: 18 MESES</field>
+            <field name="type_id" ref="type_2" />
+        </record>
+        <record model="hr.training.valoration" id="val_6">
+            <field name="name">PROFESIONAL</field>
+            <field name="score">0.1</field>
+            <field name="note">TIEMPO M&#205;NIMO DE ESTUDIOS: 8 SEMESTRES O MAS</field>
+            <field name="type_id" ref="type_2" />
+        </record>
+        <record model="hr.training.valoration" id="val_7">
+            <field name="name">LICENCIADO</field>
+            <field name="score">0.08</field>
+            <field name="note">TIEMPO M&#205;NIMO DE ESTUDIOS: 6 SEMESTRES</field>
+            <field name="type_id" ref="type_2" />
+        </record>
+        <record model="hr.training.valoration" id="val_8">
+            <field name="name">TECN&#211;LOGO</field>
+            <field name="score">0.06</field>
+            <field name="note">TIEMPO M&#205;NIMO DE ESTUDIOS: 4 SEMESTRES</field>
+            <field name="type_id" ref="type_2" />
+        </record>
+    </data>
+</openerp>

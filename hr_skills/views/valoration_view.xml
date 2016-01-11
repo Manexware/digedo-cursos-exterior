@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<!--
+			TYPE OF TRAINING
+		-->
+		<record id="view_hr_training_type_form" model="ir.ui.view">
+			<field name="name">hr.training.type.form</field>
+			<field name="model">hr.training.type</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Type of Training">
+					<field name="name" colspan="4" />
+				</form>
+			</field>
+		</record>
+		<!--record id="view_hr_training_type_tree" model="ir.ui.view">
+			<field name="name">hr.training.type.tree</field>
+			<field name="model">hr.training.type</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Type of Training">
+					<field name="name" />
+				</tree>
+			</field>
+		</record-->
+		<!--
+			VALORATION
+		-->
+		<record id="view_hr_training_valoration_form" model="ir.ui.view">
+			<field name="name">hr.training.valoration.form</field>
+			<field name="model">hr.training.valoration</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Valoration">
+					<field name="name" colspan="4" />
+					<field name="type_id" />
+					<field name="score" />
+					<field name="note" colspan="4" />
+				</form>
+			</field>
+		</record>
+		<record id="view_hr_training_valoration_tree" model="ir.ui.view">
+			<field name="name">hr.training.valoration.tree</field>
+			<field name="model">hr.training.valoration</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Valoration">
+					<field name="name" />
+					<field name="type_id" />
+					<field name="score" />
+				</tree>
+			</field>
+		</record>
+		<record id="view_hr_training_valoration_search" model="ir.ui.view">
+			<field name="name">hr.training.valoration.search</field>
+			<field name="model">hr.training.valoration</field>
+			<field name="type">search</field>
+			<field name="arch" type="xml">
+				<search>
+					<group string="Filter by...">
+						<field name="name" />
+						<field name="type_id" />
+					</group>
+					<newline />
+					<group expand="0" string="Group by...">
+						<filter string="Type" domain="[]" context="{'group_by': 'type_id'}" />
+					</group>
+				</search>
+			</field>
+		</record>
+		<record id="act_hr_training_valoration" model="ir.actions.act_window">
+			<field name="name">Valoration</field>
+			<field name="res_model">hr.training.valoration</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="search_view_id" ref="view_hr_training_valoration_search" />
+		</record>
+		<!--
+			MENUES
+		-->
+		<menuitem id="menu_hr_training_valoration"
+			parent="hr.menu_hr_configuration"
+			sequence="2"
+			groups="base.group_hr_manager"
+			action="act_hr_training_valoration" />
+		
+	</data>
+</openerp>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<openerp>
+    <data noupdate="1">
+    
+        <record id="hr_training_document_valuation_report_id" model="ir.actions.report.xml">
+            <field name="name">Valuation Report</field>
+            <field name="type">ir.actions.report.xml</field>
+            <field name="model">hr.training.document.valuation</field>
+            <field name="report_name">valuation_report</field>
+            <field name="report_type">aeroo</field>
+            <field name="in_format">oo-odt</field>
+            <field name="parser_loc">hr_skills/report/parser.py</field>
+            <field name="report_rml">hr_skills/report/valuation.odt</field>
+            <field name="parser_state">loc</field>
+            <field name="tml_source">file</field>
+        </record>
+    
+        <!--ir_set>
+            <field eval="'action'" name="key"/>
+            <field eval="'client_print_multi'" name="key2"/>
+            <field eval="['hr.training.document.valuation']" name="models"/>
+            <field name="name">Valuation Report</field>
+            <field eval="'ir.actions.report.xml,'+str(hr_training_document_valuation_report_id)" name="value"/>
+            <field eval="True" name="isobject"/>
+            <field eval="True" name="replace"/>
+        </ir_set-->
+    
+        <record id="hr_training_document_registration_report_id" model="ir.actions.report.xml">
+            <field name="name">Registration Report</field>
+            <field name="type">ir.actions.report.xml</field>
+            <field name="model">hr.training.document.registration</field>
+            <field name="report_name">registration_report</field>
+            <field name="report_type">aeroo</field>
+            <field name="in_format">oo-odt</field>
+            <field name="parser_loc">hr_skills/report/registration_parser.py</field>
+            <field name="report_rml">hr_skills/report/registration.odt</field>
+            <field name="parser_state">loc</field>
+            <field name="tml_source">file</field>
+        </record>
+
+    </data>
+</openerp>

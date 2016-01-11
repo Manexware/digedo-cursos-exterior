@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_training_type_digitizer,hr.training.type digitizer,model_hr_training_type,hr_base.digitizer,1,1,1,0
+access_hr_training_valoration_digitizer,hr.training.valoration digitizer,model_hr_training_valoration,hr_base.digitizer,1,1,1,1
+access_hr_training_document_valuation_digitizer,hr.training.document.valuation digitizer,model_hr_training_document_valuation,hr_base.digitizer,1,1,1,1
+access_hr_training_type_employee,hr.training.type employee,model_hr_training_type,base.group_user,1,0,0,0
+access_hr_training_valoration_employee,hr.training.valoration employee,model_hr_training_valoration,base.group_user,1,0,0,0
+access_hr_training_document_valuation_employee,hr.training.document.valuation employee,model_hr_training_document_valuation,base.group_user,1,0,0,0
+access_hr_training_registration_detail_digitizer,hr.training.registration.detail digitizer,model_hr_training_registration_detail,hr_base.digitizer,1,1,1,1
+access_hr_training_document_registration_digitizer,hr.training.document.registration digitizer,model_hr_training_document_registration,hr_base.digitizer,1,1,1,0
+,hr.training.registration.detail employee,model_hr_training_registration_detail,base.group_user,1,0,0,0
+,hr.training.document.registration employee,model_hr_training_document_registration,base.group_user,1,0,0,0

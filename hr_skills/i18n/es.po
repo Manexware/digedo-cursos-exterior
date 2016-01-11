@@ -1,0 +1,407 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* hr_skills
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-08-17 16:17+0000\n"
+"PO-Revision-Date: 2012-08-17 16:17+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_skills
+#: view:hr.training.document.valuation:0
+#: model:ir.actions.act_window,name:hr_skills.act_hr_training_document_valuation
+#: model:ir.ui.menu,name:hr_skills.menu_hr_training_document_valuation
+msgid "Document Valuation"
+msgstr "Valoración de Documento"
+
+#. module: hr_skills
+#: code:addons/hr_skills/hr_skills.py:110
+#: code:addons/hr_skills/hr_skills.py:243
+#: help:hr.training.document.registration,approved_date:0
+#: help:hr.training.document.valuation,approved_date:0
+#, python-format
+msgid "Date when document was approved"
+msgstr "Fecha en la que el documento fue aprobado"
+
+#. module: hr_skills
+#: code:addons/hr_skills/hr_skills.py:205
+#: field:hr.training.registration.detail,registration_id:0
+#, python-format
+msgid "Registration"
+msgstr "Registro"
+
+#. module: hr_skills
+#: code:addons/hr_skills/hr_skills.py:93
+#: code:addons/hr_skills/hr_skills.py:231
+#: field:hr.training.document.registration,trade_no:0
+#: field:hr.training.document.valuation,trade_no:0
+#, python-format
+msgid "Trade No"
+msgstr "Nº de Oficio"
+
+#. module: hr_skills
+#: code:addons/hr_skills/hr_skills.py:101
+#: code:addons/hr_skills/hr_skills.py:204
+#: field:hr.training.document.valuation,title:0
+#: field:hr.training.registration.detail,title:0
+#, python-format
+msgid "Title"
+msgstr "Título obtenido"
+
+#. module: hr_skills
+#: code:addons/hr_skills/hr_skills.py:107
+#: code:addons/hr_skills/hr_skills.py:240
+#: field:hr.training.document.registration,signature:0
+#: field:hr.training.document.valuation,signature:0
+#, python-format
+msgid "Signature"
+msgstr "Sumilla"
+
+#. module: hr_skills
+#: view:hr.training.document.registration:0
+#: view:hr.training.document.valuation:0
+msgid "If you accept can no longer edit the permission. Do you want continue?"
+msgstr "Si acepta ya no podrá editar el permiso. ¿Desea continuar?"
+
+#. module: hr_skills
+#: code:addons/hr_skills/hr_skills.py:105
+#: code:addons/hr_skills/hr_skills.py:238
+#: field:hr.training.document.registration,director_lname2:0
+#: field:hr.training.document.valuation,director_lname2:0
+#, python-format
+msgid "Last Name 2"
+msgstr "2do Apellido"
+
+#. module: hr_skills
+#: code:addons/hr_skills/hr_skills.py:51
+#: field:hr.training.valoration,note:0
+#, python-format
+msgid "Note"
+msgstr "Observaciones"
+
+#. module: hr_skills
+#: code:addons/hr_skills/hr_skills.py:103
+#: code:addons/hr_skills/hr_skills.py:236
+#: field:hr.training.document.registration,director_fname:0
+#: field:hr.training.document.valuation,director_fname:0
+#, python-format
+msgid "First Name"
+msgstr "1er Nombre"
+
+#. module: hr_skills
+#: code:addons/hr_skills/hr_skills.py:109
+#: code:addons/hr_skills/hr_skills.py:242
+#: view:hr.training.document.registration:0
+#: field:hr.training.document.registration,state:0
+#: view:hr.training.document.valuation:0
+#: field:hr.training.document.valuation,state:0
+#, python-format
+msgid "State"
+msgstr "Estado"
+
+#. module: hr_skills
+#: code:addons/hr_skills/hr_skills.py:50
+#: code:addons/hr_skills/hr_skills.py:98
+#: field:hr.training.document.valuation,score:0
+#: field:hr.training.valoration,score:0
+#, python-format
+msgid "Score"
+msgstr "Puntaje"
+
+#. module: hr_skills
+#: code:addons/hr_skills/hr_skills.py:10
+#: view:hr.training.document.registration:0
+#: selection:hr.training.document.registration,state:0
+#: view:hr.training.document.valuation:0
+#: selection:hr.training.document.valuation,state:0
+#, python-format
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: hr_skills
+#: code:addons/hr_skills/hr_skills.py:241
+#: view:hr.training.document.registration:0
+#: field:hr.training.document.registration,detail_ids:0
+#, python-format
+msgid "Details"
+msgstr "Detalles"
+
+#. module: hr_skills
+#: code:addons/hr_skills/hr_skills.py:110
+#: code:addons/hr_skills/hr_skills.py:243
+#: field:hr.training.document.registration,approved_date:0
+#: field:hr.training.document.valuation,approved_date:0
+#, python-format
+msgid "Approved Date"
+msgstr "Fecha de Aprobación"
+
+#. module: hr_skills
+#: view:hr.training.document.registration:0
+#: view:hr.training.document.valuation:0
+msgid "Reject"
+msgstr "Rechazar"
+
+#. module: hr_skills
+#: view:hr.training.document.registration:0
+#: view:hr.training.document.valuation:0
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: hr_skills
+#: code:addons/hr_skills/hr_skills.py:52
+#: code:addons/hr_skills/hr_skills.py:95
+#: view:hr.training.document.valuation:0
+#: field:hr.training.document.valuation,type_id:0
+#: view:hr.training.valoration:0
+#: field:hr.training.valoration,type_id:0
+#, python-format
+msgid "Type"
+msgstr "Tipo"
+
+#. module: hr_skills
+#: code:addons/hr_skills/hr_skills.py:108
+#: code:addons/hr_skills/hr_skills.py:234
+#: field:hr.training.document.registration,allocation:0
+#: field:hr.training.document.valuation,allocation:0
+#, python-format
+msgid "Allocation"
+msgstr "Reparto"
+
+#. module: hr_skills
+#: code:addons/hr_skills/hr_skills.py:61
+#: sql_constraint:hr.training.valoration:0
+#, python-format
+msgid "Score must be greater than 0"
+msgstr "El puntaje debe ser mayor a 0"
+
+#. module: hr_skills
+#: view:hr.training.registration.detail:0
+msgid "Registration Detail"
+msgstr "Registration Detail"
+
+#. module: hr_skills
+#: view:hr.training.document.registration:0
+#: view:hr.training.document.valuation:0
+msgid "If you approve can no longer edit the permission. Do you want continue?"
+msgstr "Si usted aprueba ya no podrá editar el permiso. ¿Desea continuar?"
+
+#. module: hr_skills
+#: code:addons/hr_skills/hr_skills.py:106
+#: field:hr.training.document.valuation,annex:0
+#, python-format
+msgid "Annex"
+msgstr "Anexo"
+
+#. module: hr_skills
+#: model:ir.actions.report.xml,name:hr_skills.hr_training_document_registration_report_id
+msgid "Registration Report"
+msgstr "Reporte Registro de Documentos"
+
+#. module: hr_skills
+#: code:addons/hr_skills/hr_skills.py:97
+#: field:hr.training.document.valuation,historic_score:0
+#, python-format
+msgid "Historic Score"
+msgstr "Puntaje Historico"
+
+#. module: hr_skills
+#: code:addons/hr_skills/hr_skills.py:12
+#: view:hr.training.document.registration:0
+#: selection:hr.training.document.registration,state:0
+#: view:hr.training.document.valuation:0
+#: selection:hr.training.document.valuation,state:0
+#, python-format
+msgid "Rejected"
+msgstr "Rechazado"
+
+#. module: hr_skills
+#: model:ir.model,name:hr_skills.model_hr_training_registration_detail
+msgid "Detail of Document Registration"
+msgstr "Detalle de Registro de Documento"
+
+#. module: hr_skills
+#: code:addons/hr_skills/hr_skills.py:102
+#: code:addons/hr_skills/hr_skills.py:235
+#: field:hr.training.document.registration,director_id:0
+#: field:hr.training.document.valuation,director_id:0
+#, python-format
+msgid "Director"
+msgstr "Director"
+
+#. module: hr_skills
+#: code:addons/hr_skills/hr_skills.py:104
+#: code:addons/hr_skills/hr_skills.py:237
+#: field:hr.training.document.registration,director_lname1:0
+#: field:hr.training.document.valuation,director_lname1:0
+#, python-format
+msgid "Last Name 1"
+msgstr "1er Apellido"
+
+#. module: hr_skills
+#: model:ir.model,name:hr_skills.model_hr_training_document_valuation
+msgid "Valuation of Document"
+msgstr "Valoración de Documentos"
+
+#. module: hr_skills
+#: code:addons/hr_skills/hr_skills.py:11
+#: view:hr.training.document.registration:0
+#: selection:hr.training.document.registration,state:0
+#: view:hr.training.document.valuation:0
+#: selection:hr.training.document.valuation,state:0
+#, python-format
+msgid "Accepted"
+msgstr "Aceptado"
+
+#. module: hr_skills
+#: code:addons/hr_skills/hr_skills.py:13
+#: view:hr.training.document.registration:0
+#: selection:hr.training.document.registration,state:0
+#: view:hr.training.document.valuation:0
+#: selection:hr.training.document.valuation,state:0
+#, python-format
+msgid "Approved"
+msgstr "Aprobado"
+
+#. module: hr_skills
+#: code:addons/hr_skills/hr_skills.py:100
+#: code:addons/hr_skills/hr_skills.py:203
+#: view:hr.training.document.valuation:0
+#: field:hr.training.document.valuation,school_id:0
+#: field:hr.training.registration.detail,school_id:0
+#, python-format
+msgid "School"
+msgstr "Unidad Educativa"
+
+#. module: hr_skills
+#: code:addons/hr_skills/hr_skills.py:24
+#: code:addons/hr_skills/hr_skills.py:49
+#: field:hr.training.type,name:0
+#: field:hr.training.valoration,name:0
+#, python-format
+msgid "Name"
+msgstr "Nombre"
+
+#. module: hr_skills
+#: code:addons/hr_skills/hr_skills.py:120
+#: code:addons/hr_skills/hr_skills.py:252
+#: sql_constraint:hr.training.document.registration:0
+#: sql_constraint:hr.training.document.valuation:0
+#, python-format
+msgid "Trade No must be unique"
+msgstr "Nº de oficio debe ser único"
+
+#. module: hr_skills
+#: view:hr.training.document.registration:0
+#: view:hr.training.document.valuation:0
+msgid "For Print"
+msgstr "Datos para Impresión"
+
+#. module: hr_skills
+#: code:addons/hr_skills/hr_skills.py:94
+#: code:addons/hr_skills/hr_skills.py:232
+#: field:hr.training.document.registration,application_date:0
+#: field:hr.training.document.valuation,application_date:0
+#, python-format
+msgid "Application Date"
+msgstr "Fecha de Solicitud"
+
+#. module: hr_skills
+#: code:addons/hr_skills/hr_skills.py:99
+#: code:addons/hr_skills/hr_skills.py:233
+#: field:hr.training.document.registration,applicant_id:0
+#: field:hr.training.document.valuation,applicant_id:0
+#, python-format
+msgid "Applicant"
+msgstr "Solicitante"
+
+#. module: hr_skills
+#: code:addons/hr_skills/hr_skills.py:239
+#: field:hr.training.document.registration,no_annex:0
+#, python-format
+msgid "No of Annexes"
+msgstr "# de Anexos"
+
+#. module: hr_skills
+#: code:addons/hr_skills/hr_skills.py:28
+#: code:addons/hr_skills/hr_skills.py:60
+#: sql_constraint:hr.training.type:0
+#: sql_constraint:hr.training.valoration:0
+#, python-format
+msgid "Name must be unique"
+msgstr "El nombre debe ser único"
+
+#. module: hr_skills
+#: view:hr.training.document.registration:0
+#: view:hr.training.document.valuation:0
+msgid "Approve"
+msgstr "Aprobar"
+
+#. module: hr_skills
+#: model:ir.actions.report.xml,name:hr_skills.hr_training_document_valuation_report_id
+msgid "Valuation Report"
+msgstr "Reporte Valoración de Documentos"
+
+#. module: hr_skills
+#: code:addons/hr_skills/hr_skills.py:96
+#: view:hr.training.document.valuation:0
+#: field:hr.training.document.valuation,valoration_id:0
+#: view:hr.training.valoration:0
+#: model:ir.actions.act_window,name:hr_skills.act_hr_training_valoration
+#: model:ir.model,name:hr_skills.model_hr_training_valoration
+#: model:ir.ui.menu,name:hr_skills.menu_hr_training_valoration
+#, python-format
+msgid "Valoration"
+msgstr "Valoración"
+
+#. module: hr_skills
+#: view:hr.training.document.registration:0
+#: view:hr.training.document.valuation:0
+msgid "If you reject can no longer edit the permission. Do you want continue?"
+msgstr "Si usted rechaza ya no podrá editar el permiso. ¿Desea continuar?"
+
+#. module: hr_skills
+#: view:hr.training.document.registration:0
+#: view:hr.training.document.valuation:0
+msgid "Accept"
+msgstr "Aceptar"
+
+#. module: hr_skills
+#: model:ir.model,name:hr_skills.model_hr_training_document_registration
+msgid "Registration of Document"
+msgstr "Registro de Documentos"
+
+#. module: hr_skills
+#: view:hr.training.document.registration:0
+#: view:hr.training.document.valuation:0
+#: view:hr.training.valoration:0
+msgid "Group by..."
+msgstr "Agrupar por..."
+
+#. module: hr_skills
+#: view:hr.training.document.registration:0
+#: model:ir.actions.act_window,name:hr_skills.act_hr_training_document_registration
+#: model:ir.ui.menu,name:hr_skills.menu_hr_training_document_registration
+msgid "Document Registration"
+msgstr "Registro de Documento"
+
+#. module: hr_skills
+#: view:hr.training.type:0
+#: model:ir.model,name:hr_skills.model_hr_training_type
+msgid "Type of Training"
+msgstr "Tipo de Capacitación"
+
+#. module: hr_skills
+#: view:hr.training.document.registration:0
+#: view:hr.training.document.valuation:0
+#: view:hr.training.valoration:0
+msgid "Filter by..."
+msgstr "Filtrar por..."
+

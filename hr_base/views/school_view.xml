@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<!--
+			SCHOOL
+		-->
+		<record id="view_hr_base_school_form" model="ir.ui.view">
+			<field name="name">hr.base.school.form</field>
+			<field name="model">hr.base.school</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="School">
+					<field name="abbreviation" />
+					<newline />
+					<field name="name" colspan="4" />
+				</form>
+			</field>
+		</record>
+		<record id="view_hr_base_school_tree" model="ir.ui.view">
+			<field name="name">hr.base.school.tree</field>
+			<field name="model">hr.base.school</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="School">
+					<field name="abbreviation" />
+					<field name="name" />
+				</tree>
+			</field>
+		</record>
+		<record id="view_hr_base_school_search" model="ir.ui.view">
+			<field name="name">hr.base.school.search</field>
+			<field name="model">hr.base.school</field>
+			<field name="type">search</field>
+			<field name="arch" type="xml">
+				<search>
+					<group string="Filter by...">
+						<field name="abbreviation" />
+						<field name="name" />
+					</group>
+				</search>
+			</field>
+		</record>
+		<record id="act_hr_base_school" model="ir.actions.act_window">
+			<field name="name">School</field>
+			<field name="res_model">hr.base.school</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="search_view_id" ref="view_hr_base_school_search" />
+		</record>
+		<!--
+			MENU
+		-->
+		<menuitem id="menu_hr_base_school"
+			parent="hr.menu_human_resources_configuration"
+			sequence="4"
+			action="act_hr_base_school" />
+
+	</data>
+</openerp>
