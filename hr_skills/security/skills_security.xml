@@ -4,5 +4,6 @@
         <record id="hr_skills.digitizer" model="res.groups">
             <field name="name">Digitizer of Documents</field>
         </record>
+
     </data>
 </openerp>
